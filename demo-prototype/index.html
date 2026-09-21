@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>T-Work & Gadget Sagl | Abbigliamento da Lavoro e Gadget a Chiasso, Ticino</title>
+  <meta name="description" content="T-Work & Gadget Sagl è il punto di riferimento in Ticino per abbigliamento da lavoro certificato, abbigliamento promozionale e gadget aziendali personalizzati. Richiedi un preventivo rapido a Chiasso." />
+  
+  <!-- Open Graph / SEO -->
+  <meta property="og:title" content="T-Work & Gadget Sagl | Abbigliamento da Lavoro e Gadget in Ticino" />
+  <meta property="og:description" content="Personalizza divise professionali, abbigliamento promozionale e gadget per la tua azienda con ricamo e serigrafia ad alta definizione." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="it_CH" />
+  <meta property="og:url" content="https://t-workgadget.ch" />
+  
+  <!-- Tailwind CSS & Google Fonts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#fff7ed',
+              100: '#ffedd5',
+              500: '#f97316',
+              600: '#ea580c',
+              700: '#c2410c',
+              900: '#7c2d12',
+            },
+            slate: {
+              850: '#151e2e',
+              900: '#0f172a',
+              950: '#020617',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Dati Strutturati Schema.org LocalBusiness per il Canton Ticino -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "T-Work & Gadget Sagl",
+    "image": "https://cdn.prod.website-files.com/65f156cc2d57b8c9b97bc4bd/69cfcdff0ebe2c81b8836762_logo_principale.svg",
+    "telephone": "+41 76 304 25 25",
+    "email": "info@t-workgadget.ch",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Piazza Boffalora 4",
+      "addressLocality": "Chiasso",
+      "postalCode": "6830",
+      "addressRegion": "TI",
+      "addressCountry": "CH"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 45.8361,
+      "longitude": 9.0309
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Emanuele Frigerio"
+    },
+    "priceRange": "$$"
+  }
+  </script>
+
+  <style>
+    /* Custom utility styles */
+    .glass-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(226, 232, 240, 0.8);
+    }
+  </style>
+</head>
+<body class="font-sans text-slate-800 bg-slate-50 antialiased selection:bg-orange-500 selection:text-white">
+
+  <!-- TOP BAR TICINO -->
+  <div class="bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-4">
+        <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-orange-500"></i> Sede a Chiasso, Ticino</span>
+        <span class="hidden sm:inline-block text-slate-600">•</span>
+        <span class="hidden sm:flex items-center gap-1.5"><i data-lucide="truck" class="w-3.5 h-3.5 text-orange-500"></i> Consegne celeri in tutta la Svizzera</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="tel:+41763042525" class="hover:text-white transition flex items-center gap-1.5">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-orange-500"></i> +41 76 304 25 25
+        </a>
+        <span class="text-slate-600">|</span>
+        <a href="mailto:info@t-workgadget.ch" class="hover:text-white transition flex items-center gap-1.5">
+          <i data-lucide="mail" class="w-3.5 h-3.5 text-orange-500"></i> info@t-workgadget.ch
+        </a>
+        <span class="text-slate-600">|</span>
+        <span class="font-semibold text-orange-400">IT</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN NAVIGATION -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur shadow-sm border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- LOGO -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center text-white shadow-md shadow-orange-500/20 group-hover:scale-105 transition-transform">
+          <span class="font-black text-xl tracking-tighter">T<span class="text-white/80">W</span></span>
+        </div>
+        <div>
+          <span class="font-bold text-lg text-slate-900 leading-none tracking-tight block">T-WORK & GADGET</span>
+          <span class="text-[11px] text-slate-500 font-semibold uppercase tracking-wider block mt-0.5">Sagl • Chiasso</span>
+        </div>
+      </a>
+
+      <!-- DESKTOP NAV -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-700">
+        <a href="#catalogo" class="hover:text-orange-600 transition">Catalogo Prodotti</a>
+        <a href="#lavorazioni" class="hover:text-orange-600 transition">Tecniche di Personalizzazione</a>
+        <a href="#chi-siamo" class="hover:text-orange-600 transition">Chi Siamo</a>
+        <a href="#contatti" class="hover:text-orange-600 transition">Contatti</a>
+      </nav>
+
+      <!-- CTA & QUOTE DRAWER TRIGGER -->
+      <div class="flex items-center gap-3">
+        <button onclick="toggleQuoteDrawer()" class="relative p-2.5 rounded-xl border border-slate-200 text-slate-700 hover:border-orange-500 hover:text-orange-600 transition flex items-center gap-2">
+          <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+          <span class="hidden sm:inline-block text-xs font-semibold">Preventivo</span>
+          <span id="quoteBadge" class="absolute -top-1.5 -right-1.5 w-5 h-5 bg-orange-600 text-white rounded-full text-[11px] font-bold flex items-center justify-center">0</span>
+        </button>
+
+        <a href="#contatti" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-orange-600 text-white text-sm font-semibold hover:bg-orange-700 shadow-md shadow-orange-600/20 transition-all hover:shadow-lg">
+          <span>Richiedi Offerta</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- BANNER NOTIFICA COMPARATIVA (AUDIT KRAKEN) -->
+  <div class="bg-amber-500/10 border-b border-amber-500/20 px-4 py-2 text-center text-xs font-medium text-amber-900">
+    ⚡ <strong>Anteprima Prototipo Nuovo Sito</strong> — Risolve i bug dell'attuale Webflow: catalogo interattivo, preventivatore con upload logo, zero refusi e SEO per il Ticino.
+    <a href="../index.html" class="inline-flex items-center gap-1 font-bold text-orange-700 hover:text-orange-900 underline ml-2">← Leggi l'Audit & la Proposta</a>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="relative pt-16 pb-20 md:pt-24 md:pb-28 overflow-hidden bg-gradient-to-b from-white via-orange-50/30 to-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-100 text-orange-800 text-xs font-bold uppercase tracking-wider">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5 text-orange-600"></i> Soluzioni Corporate & B2B in Svizzera
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-950 tracking-tight leading-[1.12]">
+            Dai forma alle tue idee. <br/>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-amber-600">
+              Vesti l'identità del tuo brand.
+            </span>
+          </h1>
+
+          <p class="text-lg sm:text-xl text-slate-600 max-w-2xl font-normal leading-relaxed">
+            Dal Ticino per tutta la Svizzera: abbigliamento da lavoro certificato, divise aziendali e gadget promozionali personalizzati con ricamo e serigrafia d'alta precisione.
+          </p>
+
+          <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <a href="#catalogo" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl bg-orange-600 hover:bg-orange-700 text-white font-bold shadow-lg shadow-orange-600/25 transition-all hover:scale-[1.02]">
+              <i data-lucide="layout-grid" class="w-5 h-5"></i>
+              <span>Esplora il Catalogo B2B</span>
+            </a>
+
+            <a href="https://wa.me/41763042525" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl bg-white hover:bg-slate-100 text-slate-800 font-bold border border-slate-200 shadow-sm transition">
+              <i data-lucide="message-circle" class="w-5 h-5 text-emerald-600"></i>
+              <span>WhatsApp Diretto</span>
+            </a>
+          </div>
+
+          <!-- TRUST BADGES -->
+          <div class="pt-8 border-t border-slate-200/80 grid grid-cols-3 gap-4 text-left">
+            <div>
+              <div class="font-extrabold text-2xl text-slate-900">500+</div>
+              <div class="text-xs text-slate-500 font-medium">Aziende e PMI fornite</div>
+            </div>
+            <div>
+              <div class="font-extrabold text-2xl text-slate-900">100%</div>
+              <div class="text-xs text-slate-500 font-medium">Personalizzazione In-House</div>
+            </div>
+            <div>
+              <div class="font-extrabold text-2xl text-slate-900">48-72h</div>
+              <div class="text-xs text-slate-500 font-medium">Bozze grafiche e campioni</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- HERO GRAPHIC / MOCKUP -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <div class="absolute -inset-1.5 bg-gradient-to-r from-orange-500 to-amber-500 rounded-3xl blur-xl opacity-30 animate-pulse"></div>
+            <div class="relative rounded-2xl bg-white p-4 shadow-2xl border border-slate-100">
+              <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=900&q=80" alt="Abbigliamento da lavoro e gadget aziendali" class="rounded-xl w-full h-80 object-cover" />
+              
+              <!-- Floating Card -->
+              <div class="glass-card absolute -bottom-6 -left-6 p-4 rounded-xl shadow-lg border border-slate-200 max-w-[260px] hidden sm:block">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold">
+                    <i data-lucide="check-check" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <p class="text-xs font-bold text-slate-900">Preventivo Rapido B2B</p>
+                    <p class="text-[11px] text-slate-500">Invia il logo, pensiamo a tutto noi</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SEZIONE CATALOGO INTERATTIVO -->
+  <section id="catalogo" class="py-20 bg-white border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div>
+          <div class="text-xs font-bold tracking-wider text-orange-600 uppercase mb-2">Catalogo Digitale 2026</div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Prodotti Selezionati per Aziende</h2>
+          <p class="text-slate-600 mt-2 max-w-2xl text-sm sm:text-base">
+            Basta pesanti PDF su Google Drive: sfoglia gli articoli dei migliori brand europei, seleziona i capi e richiedi una quotazione su misura in 60 secondi.
+          </p>
+        </div>
+
+        <!-- SEARCH BOX -->
+        <div class="w-full md:w-72">
+          <div class="relative">
+            <input type="text" id="searchInput" onkeyup="filterProducts()" placeholder="Cerca prodotto, marca..." class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500" />
+            <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3.5 top-3"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- FILTER TABS -->
+      <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-8 border-b border-slate-100">
+        <button onclick="setCategory('all')" class="cat-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap bg-orange-600 text-white transition shadow-sm" data-category="all">Tutti gli Articoli</button>
+        <button onclick="setCategory('lavoro')" class="cat-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200 transition" data-category="lavoro">Abbigliamento da Lavoro & DPI</button>
+        <button onclick="setCategory('promo')" class="cat-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200 transition" data-category="promo">Abbigliamento Promozionale</button>
+        <button onclick="setCategory('gadget')" class="cat-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200 transition" data-category="gadget">Gadget & Articoli Tech</button>
+        <button onclick="setCategory('horeca')" class="cat-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200 transition" data-category="horeca">Horeca & Divise Cucina</button>
+      </div>
+
+      <!-- PRODUCT GRID -->
+      <div id="productGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        
+        <!-- PRODOTTO 1 -->
+        <div class="product-card bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col" data-category="lavoro" data-name="Giacca Alta Visibilità Multitasche Portwest">
+          <div class="relative h-56 bg-slate-100 overflow-hidden">
+            <span class="absolute top-3 left-3 bg-slate-900 text-white text-[11px] font-bold px-2.5 py-1 rounded-md z-10">Portwest</span>
+            <img src="https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=600&q=80" alt="Giacca Alta Visibilità" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-semibold text-orange-600 uppercase tracking-wider">Norma EN ISO 20471</span>
+              <h3 class="font-bold text-slate-900 mt-1 text-base leading-snug">Giacca Alta Visibilità Multitasche</h3>
+              <p class="text-xs text-slate-500 mt-1.5 line-clamp-2">Impermeabile e traspirante con bande riflettenti certificate. Ideale per cantieri e logistica in Ticino.</p>
+            </div>
+            <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
+              <span class="text-xs text-slate-500 font-medium">Taglie: S - 4XL</span>
+              <button onclick="addToQuote('Giacca Alta Visibilità Portwest', 'Portwest', 'Lavoro')" class="px-3 py-1.5 bg-orange-50 text-orange-700 hover:bg-orange-600 hover:text-white rounded-lg text-xs font-bold transition flex items-center gap-1.5">
+                <i data-lucide="plus" class="w-3.5 h-3.5"></i> Preventivo
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODOTTO 2 -->
+        <div class="product-card bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col" data-category="promo" data-name="Hoodie Premium Felpa con Cappuccio Clique">
+          <div class="relative h-56 bg-slate-100 overflow-hidden">
+            <span class="absolute top-3 left-3 bg-slate-900 text-white text-[11px] font-bold px-2.5 py-1 rounded-md z-10">Clique</span>
+            <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=600&q=80" alt="Felpa Clique" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-semibold text-orange-600 uppercase tracking-wider">Corporate & Eventi</span>
+              <h3 class="font-bold text-slate-900 mt-1 text-base leading-snug">Felpa Classic Hooded Cardigan</h3>
+              <p class="text-xs text-slate-500 mt-1.5 line-clamp-2">Cotone pettinato ad alta densità. Resa perfetta per ricamo a rilievo o stampa transfer serigrafica.</p>
+            </div>
+            <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
+              <span class="text-xs text-slate-500 font-medium">18 Colori disponibili</span>
+              <button onclick="addToQuote('Felpa Hooded Cardigan', 'Clique', 'Promozionale')" class="px-3 py-1.5 bg-orange-50 text-orange-700 hover:bg-orange-600 hover:text-white rounded-lg text-xs font-bold transition flex items-center gap-1.5">
+                <i data-lucide="plus" class="w-3.5 h-3.5"></i> Preventivo
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODOTTO 3 -->
+        <div class="product-card bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col" data-category="lavoro" data-name="Pantaloni Elasticizzati Multitasche Rossini">
+          <div class="relative h-56 bg-slate-100 overflow-hidden">
+            <span class="absolute top-3 left-3 bg-slate-900 text-white text-[11px] font-bold px-2.5 py-1 rounded-md z-10">Rossini</span>
+            <img src="https://images.unsplash.com/photo-1542272604-780c96856592?auto=format&fit=crop&w=600&q=80" alt="Pantaloni Rossini" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-semibold text-orange-600 uppercase tracking-wider">Workwear Resistente</span>
+              <h3 class="font-bold text-slate-900 mt-1 text-base leading-snug">Pantalone Stretch Tech Rossini</h3>
+              <p class="text-xs text-slate-500 mt-1.5 line-clamp-2">Tessuto elasticizzato anti-strappo con tasche porta-metro e rinforzi in Cordura alle ginocchia.</p>
+            </div>
+            <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
+              <span class="text-xs text-slate-500 font-medium">Taglie: 42 - 64</span>
+              <button onclick="addToQuote('Pantalone Stretch Tech', 'Rossini', 'Lavoro')" class="px-3 py-1.5 bg-orange-50 text-orange-700 hover:bg-orange-600 hover:text-white rounded-lg text-xs font-bold transition flex items-center gap-1.5">
+                <i data-lucide="plus" class="w-3.5 h-3.5"></i> Preventivo
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODOTTO 4 -->
+        <div class="product-card bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col" data-category="horeca" data-name="Giacca Cuoco Chef Giblors Traspirante">
+          <div class="relative h-56 bg-slate-100 overflow-hidden">
+            <span class="absolute top-3 left-3 bg-slate-900 text-white text-[11px] font-bold px-2.5 py-1 rounded-md z-10">Giblor's</span>
+            <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=600&q=80" alt="Giacca Cuoco Giblor" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-semibold text-orange-600 uppercase tracking-wider">Horeca & Ristorazione</span>
+              <h3 class="font-bold text-slate-900 mt-1 text-base leading-snug">Giacca Chef Executive Giblor's</h3>
+              <p class="text-xs text-slate-500 mt-1.5 line-clamp-2">Design sartoriale italiano con retro in rete traspirante Airweb. Bottoni a pressione a scomparsa.</p>
+            </div>
+            <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
+              <span class="text-xs text-slate-500 font-medium">Colori: Bianco / Nero</span>
+              <button onclick="addToQuote('Giacca Chef Executive', 'Giblor’s', 'Horeca')" class="px-3 py-1.5 bg-orange-50 text-orange-700 hover:bg-orange-600 hover:text-white rounded-lg text-xs font-bold transition flex items-center gap-1.5">
+                <i data-lucide="plus" class="w-3.5 h-3.5"></i> Preventivo
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODOTTO 5 -->
+        <div class="product-card bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col" data-category="gadget" data-name="Borraccia Termica Inox Incisa Laser Makito">
+          <div class="relative h-56 bg-slate-100 overflow-hidden">
+            <span class="absolute top-3 left-3 bg-slate-900 text-white text-[11px] font-bold px-2.5 py-1 rounded-md z-10">Makito</span>
+            <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=600&q=80" alt="Borraccia Termica" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-semibold text-orange-600 uppercase tracking-wider">Gadget Sostenibile</span>
+              <h3 class="font-bold text-slate-900 mt-1 text-base leading-snug">Thermal Bottle 500ml Inox</h3>
+              <p class="text-xs text-slate-500 mt-1.5 line-clamp-2">Doppia parete sottovuoto. Mantieni caldo 12h e freddo 24h. Personalizzabile con incisione laser del logo.</p>
+            </div>
+            <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
+              <span class="text-xs text-slate-500 font-medium">Minimo: 50 pz</span>
+              <button onclick="addToQuote('Thermal Bottle 500ml', 'Makito', 'Gadget')" class="px-3 py-1.5 bg-orange-50 text-orange-700 hover:bg-orange-600 hover:text-white rounded-lg text-xs font-bold transition flex items-center gap-1.5">
+                <i data-lucide="plus" class="w-3.5 h-3.5"></i> Preventivo
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODOTTO 6 -->
+        <div class="product-card bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col" data-category="promo" data-name="T-Shirt Cotone Organico Sols Regent">
+          <div class="relative h-56 bg-slate-100 overflow-hidden">
+            <span class="absolute top-3 left-3 bg-slate-900 text-white text-[11px] font-bold px-2.5 py-1 rounded-md z-10">Sol's</span>
+            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=600&q=80" alt="T-Shirt Sol's" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-semibold text-orange-600 uppercase tracking-wider">Best Seller Promozionale</span>
+              <h3 class="font-bold text-slate-900 mt-1 text-base leading-snug">T-Shirt Regent 150g Cotone</h3>
+              <p class="text-xs text-slate-500 mt-1.5 line-clamp-2">Il punto di riferimento per eventi aziendali, team building e merchandising. Oltre 40 tinte disponibili.</p>
+            </div>
+            <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
+              <span class="text-xs text-slate-500 font-medium">40+ Colori</span>
+              <button onclick="addToQuote('T-Shirt Regent 150g', 'Sol’s', 'Promozionale')" class="px-3 py-1.5 bg-orange-50 text-orange-700 hover:bg-orange-600 hover:text-white rounded-lg text-xs font-bold transition flex items-center gap-1.5">
+                <i data-lucide="plus" class="w-3.5 h-3.5"></i> Preventivo
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEZIONE TECNICHE DI PERSONALIZZAZIONE -->
+  <section id="lavorazioni" class="py-20 bg-slate-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold tracking-wider text-orange-400 uppercase">Qualità Artigianale & Tecnologia</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold mt-2 tracking-tight">Le Tecniche di Personalizzazione T-Works</h2>
+        <p class="text-slate-400 mt-3 text-sm sm:text-base">
+          Consulenza diretta per scegliere la tecnica ideale in base al tessuto, all'utilizzo e alla durata nel tempo.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="p-6 rounded-2xl bg-slate-800/80 border border-slate-700/80 hover:border-orange-500/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-orange-500/10 text-orange-400 flex items-center justify-center mb-4">
+            <i data-lucide="award" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold">Ricamo Diretto</h3>
+          <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+            La massima eleganza per polo, felpe e giacche. Inalterabile ai lavaggi industriali e di prestigio superiore.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-800/80 border border-slate-700/80 hover:border-orange-500/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-orange-500/10 text-orange-400 flex items-center justify-center mb-4">
+            <i data-lucide="layers" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold">Serigrafia Tessile</h3>
+          <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+            Ideale per grandi tirature di t-shirt e borse shopper. Colori pieni, brillanti e costo unitario imbattibile.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-800/80 border border-slate-700/80 hover:border-orange-500/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-orange-500/10 text-orange-400 flex items-center justify-center mb-4">
+            <i data-lucide="printer" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold">Stampa Digitale DTF</h3>
+          <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+            Riproduzione fotografica di sfumature complesse e dettagli micrometrici anche per piccole serie aziendali.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-800/80 border border-slate-700/80 hover:border-orange-500/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-orange-500/10 text-orange-400 flex items-center justify-center mb-4">
+            <i data-lucide="zap" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold">Incisione Laser</h3>
+          <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+            Finitura indelebile e raffinata su metallo, alluminio, legno e borracce termiche promozionali.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FORM CONTATTO & PREVENTIVO -->
+  <section id="contatti" class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid lg:grid-cols-12 gap-12 items-start">
+        
+        <div class="lg:col-span-5 space-y-6">
+          <span class="text-xs font-bold tracking-wider text-orange-600 uppercase">Contatto Diretto</span>
+          <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Parla con Emanuele Frigerio</h2>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Hai un progetto speciale, necessiti di una campionatura da toccare con mano o vuoi una quotazione riservata per la tua azienda? Siamo a tua completa disposizione nella sede di Chiasso.
+          </p>
+
+          <div class="space-y-4 pt-4">
+            <div class="flex items-start gap-4 p-4 rounded-xl bg-white border border-slate-200 shadow-sm">
+              <div class="w-10 h-10 rounded-lg bg-orange-50 text-orange-600 flex items-center justify-center shrink-0">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-slate-900">Sede Operativa</p>
+                <p class="text-xs text-slate-600 mt-0.5">Piazza Boffalora 4, 6830 Chiasso (CH)</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-xl bg-white border border-slate-200 shadow-sm">
+              <div class="w-10 h-10 rounded-lg bg-orange-50 text-orange-600 flex items-center justify-center shrink-0">
+                <i data-lucide="phone" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-slate-900">Telefono & Mobile</p>
+                <a href="tel:+41763042525" class="text-xs text-orange-600 font-semibold hover:underline block mt-0.5">+41 76 304 25 25</a>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-xl bg-white border border-slate-200 shadow-sm">
+              <div class="w-10 h-10 rounded-lg bg-orange-50 text-orange-600 flex items-center justify-center shrink-0">
+                <i data-lucide="mail" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-slate-900">E-mail Diretta</p>
+                <a href="mailto:info@t-workgadget.ch" class="text-xs text-orange-600 font-semibold hover:underline block mt-0.5">info@t-workgadget.ch</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FORM B2B CON UPLOAD LOGO (POST, SICURO E CONFORME NLPD) -->
+        <div class="lg:col-span-7 bg-white p-8 rounded-3xl border border-slate-200 shadow-xl">
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Invia la tua richiesta di preventivo</h3>
+          <p class="text-xs text-slate-500 mb-6">Compila i dati aziendali per ricevere la bozza grafica gratuita e l'offerta economica.</p>
+
+          <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Ragione Sociale / Azienda *</label>
+                <input type="text" required placeholder="Es. Rossi Costruzioni SA" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-orange-500 focus:outline-none" />
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Nome e Cognome Referente *</label>
+                <input type="text" required placeholder="Es. Marco Rossi" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-orange-500 focus:outline-none" />
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">E-mail aziendale *</label>
+                <input type="email" required placeholder="marco@azienda.ch" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-orange-500 focus:outline-none" />
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Telefono Svizzera / Estero *</label>
+                <input type="tel" required placeholder="+41 91 ..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-orange-500 focus:outline-none" />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Carica il Logo Aziendale (Opzionale per bozza grafica)</label>
+              <div class="border-2 border-dashed border-slate-200 rounded-xl p-4 text-center hover:border-orange-500 transition cursor-pointer">
+                <i data-lucide="upload-cloud" class="w-6 h-6 text-slate-400 mx-auto mb-1"></i>
+                <span class="text-xs text-slate-600 block">Trascina qui il file o <span class="text-orange-600 font-semibold underline">seleziona da computer</span></span>
+                <span class="text-[10px] text-slate-400 mt-1 block">Formati consigliati: .AI, .EPS, .PDF, .SVG o PNG alta risoluzione</span>
+                <input type="file" class="hidden" />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Dettagli della richiesta e quantitativi stimati *</label>
+              <textarea rows="3" required placeholder="Indica i prodotti desiderati, i quantitativi indicativi (es. 50 polo + 20 felpe) e le posizioni di personalizzazione (es. logo ricamato a cuore)..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-orange-500 focus:outline-none"></textarea>
+            </div>
+
+            <div class="flex items-start gap-2 pt-1">
+              <input type="checkbox" required id="privacy" class="mt-0.5 rounded text-orange-600 focus:ring-orange-500" />
+              <label for="privacy" class="text-[11px] text-slate-500 leading-tight">
+                Ho preso visione dell'informativa sulla protezione dei dati secondo la Legge Federale Svizzera (nLPD) e acconsento al trattamento della richiesta.
+              </label>
+            </div>
+
+            <button type="submit" class="w-full py-3.5 rounded-xl bg-orange-600 hover:bg-orange-700 text-white font-bold text-sm shadow-md shadow-orange-600/20 transition flex items-center justify-center gap-2">
+              <i data-lucide="send" class="w-4 h-4"></i> Invia Richiesta Preventivo
+            </button>
+          </form>
+
+          <div id="formSuccess" class="hidden mt-4 p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-center text-xs font-semibold">
+            🎉 Grazie! La tua richiesta è stata registrata con successo. Emanuele ti ricontatterà entro 24 ore lavorative.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+      <div>
+        <span class="text-white font-bold text-base block mb-2">T-Work & Gadget Sagl</span>
+        <p class="text-slate-400 text-xs leading-relaxed">
+          Piazza Boffalora 4<br/>
+          6830 Chiasso — Svizzera<br/>
+          CHE-352.000.000 IVA
+        </p>
+      </div>
+
+      <div>
+        <span class="text-white font-bold text-xs uppercase tracking-wider block mb-3">Linee di Prodotto</span>
+        <ul class="space-y-2">
+          <li><a href="#catalogo" class="hover:text-white transition">Abbigliamento da Lavoro & DPI</a></li>
+          <li><a href="#catalogo" class="hover:text-white transition">Abbigliamento Promozionale</a></li>
+          <li><a href="#catalogo" class="hover:text-white transition">Divise Ristorazione & Cucina</a></li>
+          <li><a href="#catalogo" class="hover:text-white transition">Gadget Aziendali & Merchandising</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <span class="text-white font-bold text-xs uppercase tracking-wider block mb-3">I Nostri Marchi</span>
+        <div class="flex flex-wrap gap-1.5">
+          <span class="px-2 py-1 bg-slate-900 rounded border border-slate-800 text-[10px]">Portwest</span>
+          <span class="px-2 py-1 bg-slate-900 rounded border border-slate-800 text-[10px]">Clique</span>
+          <span class="px-2 py-1 bg-slate-900 rounded border border-slate-800 text-[10px]">Sol's</span>
+          <span class="px-2 py-1 bg-slate-900 rounded border border-slate-800 text-[10px]">Giblor's</span>
+          <span class="px-2 py-1 bg-slate-900 rounded border border-slate-800 text-[10px]">Rossini</span>
+          <span class="px-2 py-1 bg-slate-900 rounded border border-slate-800 text-[10px]">Makito</span>
+          <span class="px-2 py-1 bg-slate-900 rounded border border-slate-800 text-[10px]">Siggi</span>
+        </div>
+      </div>
+
+      <div>
+        <span class="text-white font-bold text-xs uppercase tracking-wider block mb-3">Garanzia & Compliance</span>
+        <p class="text-[11px] leading-relaxed text-slate-500">
+          Tutti i dati personali sono gestiti nel rispetto rigoroso della nLPD svizzera e GDPR. Consegne rapide tramite Posta Svizzera / corriere espresso.
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-slate-900 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px]">
+      <div>© 2026 T-Work & Gadget Sagl. Tutti i diritti riservati. Sviluppato da Kraken Web Development.</div>
+      <div class="flex gap-4">
+        <a href="#" class="hover:text-white transition">Privacy Policy (nLPD)</a>
+        <a href="#" class="hover:text-white transition">Condizioni Generali</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- QUOTE SLIDE-OVER DRAWER -->
+  <div id="quoteDrawer" class="fixed inset-0 z-50 overflow-hidden hidden" aria-labelledby="slide-over-title" role="dialog" aria-modal="true">
+    <div class="absolute inset-0 bg-slate-950/60 backdrop-blur-sm transition-opacity" onclick="toggleQuoteDrawer()"></div>
+
+    <div class="fixed inset-y-0 right-0 max-w-full flex pl-10">
+      <div class="w-screen max-w-md bg-white shadow-2xl flex flex-col">
+        
+        <div class="p-6 bg-slate-900 text-white flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <i data-lucide="clipboard-list" class="w-5 h-5 text-orange-500"></i>
+            <h2 class="text-base font-bold">Richiesta Preventivo</h2>
+          </div>
+          <button onclick="toggleQuoteDrawer()" class="text-slate-400 hover:text-white transition">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+
+        <div class="p-6 flex-1 overflow-y-auto space-y-4">
+          <div id="quoteItemsList" class="space-y-3">
+            <!-- Items inject here -->
+            <div class="text-center py-12 text-slate-400">
+              <i data-lucide="shopping-bag" class="w-10 h-10 mx-auto text-slate-300 mb-2"></i>
+              <p class="text-xs">Nessun articolo aggiunto al preventivo.</p>
+              <p class="text-[11px] text-slate-400 mt-1">Clicca su "+ Preventivo" sui capi del catalogo.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6 bg-slate-50 border-t border-slate-200">
+          <a href="#contatti" onclick="toggleQuoteDrawer()" class="w-full py-3 rounded-xl bg-orange-600 hover:bg-orange-700 text-white font-bold text-xs flex items-center justify-center gap-2 transition">
+            <span>Procedi con la richiesta</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPT DINAMICO PROTOTIPO -->
+  <script>
+    lucide.createIcons();
+
+    let quoteItems = [];
+
+    function setCategory(category) {
+      document.querySelectorAll('.cat-btn').forEach(btn => {
+        if (btn.dataset.category === category) {
+          btn.className = 'cat-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap bg-orange-600 text-white transition shadow-sm';
+        } else {
+          btn.className = 'cat-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200 transition';
+        }
+      });
+
+      document.querySelectorAll('.product-card').forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    function filterProducts() {
+      const q = document.getElementById('searchInput').value.toLowerCase();
+      document.querySelectorAll('.product-card').forEach(card => {
+        const name = card.dataset.name.toLowerCase();
+        if (name.includes(q)) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    function toggleQuoteDrawer() {
+      const drawer = document.getElementById('quoteDrawer');
+      drawer.classList.toggle('hidden');
+    }
+
+    function addToQuote(name, brand, cat) {
+      quoteItems.push({ id: Date.now(), name, brand, cat, qty: 25 });
+      updateQuoteUI();
+      toggleQuoteDrawer();
+    }
+
+    function removeFromQuote(id) {
+      quoteItems = quoteItems.filter(item => item.id !== id);
+      updateQuoteUI();
+    }
+
+    function updateQuoteUI() {
+      document.getElementById('quoteBadge').innerText = quoteItems.length;
+      const list = document.getElementById('quoteItemsList');
+      if (quoteItems.length === 0) {
+        list.innerHTML = `
+          <div class="text-center py-12 text-slate-400">
+            <i data-lucide="shopping-bag" class="w-10 h-10 mx-auto text-slate-300 mb-2"></i>
+            <p class="text-xs">Nessun articolo aggiunto al preventivo.</p>
+            <p class="text-[11px] text-slate-400 mt-1">Clicca su "+ Preventivo" sui capi del catalogo.</p>
+          </div>
+        `;
+      } else {
+        list.innerHTML = quoteItems.map(item => `
+          <div class="p-3 bg-white rounded-xl border border-slate-200 shadow-sm flex items-center justify-between gap-3">
+            <div>
+              <span class="text-[10px] font-bold text-orange-600 uppercase">${item.brand} • ${item.cat}</span>
+              <p class="text-xs font-bold text-slate-900">${item.name}</p>
+              <div class="flex items-center gap-2 mt-1">
+                <span class="text-[11px] text-slate-500">Q.tà stimata:</span>
+                <input type="number" value="${item.qty}" min="5" step="5" class="w-16 px-2 py-0.5 border border-slate-200 rounded text-xs text-center" />
+              </div>
+            </div>
+            <button onclick="removeFromQuote(${item.id})" class="text-slate-400 hover:text-red-600 transition p-1">
+              <i data-lucide="trash-2" class="w-4 h-4"></i>
+            </button>
+          </div>
+        `).join('');
+      }
+      lucide.createIcons();
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      document.getElementById('formSuccess').classList.remove('hidden');
+      document.getElementById('contactForm').reset();
+    }
+  </script>
+</body>
+</html>

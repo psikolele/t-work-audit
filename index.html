@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audit Strategico & Proposta Nuovo Sito — T-Work & Gadget Sagl</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Space Grotesk"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#fff7ed',
+              500: '#f97316',
+              600: '#ea580c',
+              700: '#c2410c',
+            },
+            slate: {
+              850: '#151e2e',
+              900: '#0f172a',
+              950: '#020617',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    @media print {
+      body {
+        background-color: #ffffff !important;
+        color: #0f172a !important;
+        font-size: 11pt;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .page-break {
+        page-break-after: always;
+        break-after: page;
+      }
+      .print-shadow-none {
+        box-shadow: none !important;
+        border: 1px solid #e2e8f0 !important;
+      }
+      @page {
+        size: A4;
+        margin: 1.5cm;
+      }
+    }
+    
+    .glass-panel {
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(226, 232, 240, 0.8);
+    }
+  </style>
+</head>
+<body class="bg-slate-100 text-slate-800 antialiased font-sans">
+
+  <!-- TOP BAR AZIONI (NASCOSTA IN STAMPA) -->
+  <div class="no-print sticky top-0 z-50 bg-slate-900/95 backdrop-blur text-white px-4 py-3 border-b border-slate-800 shadow-lg">
+    <div class="max-w-5xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-3">
+        <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+        <span class="text-xs font-bold tracking-wide uppercase text-slate-300">Dossier Esecutivo • Kraken per T-Works</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="Audit_e_Proposta_TWorks_Kraken.pdf" download class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold transition border border-slate-700">
+          <i data-lucide="file-down" class="w-3.5 h-3.5 text-orange-400"></i>
+          <span>Scarica PDF</span>
+        </a>
+        <a href="demo-prototype/index.html" target="_blank" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold transition border border-slate-700">
+          <i data-lucide="external-link" class="w-3.5 h-3.5 text-orange-400"></i>
+          <span>Vedi Prototipo Live</span>
+        </a>
+        <button onclick="window.print()" class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-orange-600 hover:bg-orange-500 text-white text-xs font-bold transition shadow-md shadow-orange-600/30">
+          <i data-lucide="printer" class="w-3.5 h-3.5"></i>
+          <span>Stampa o Salva PDF</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTAINER DOCUMENTO A4 -->
+  <div class="max-w-5xl mx-auto my-6 sm:my-10 px-4 sm:px-0">
+    <div class="bg-white rounded-2xl shadow-xl border border-slate-200 p-8 sm:p-14 print-shadow-none">
+
+      <!-- ==========================================
+           SEZIONE 1: COVER / INTESTAZIONE
+           ========================================== -->
+      <div class="border-b-2 border-slate-900 pb-10 mb-12">
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-6">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-100 text-orange-800 text-xs font-bold uppercase tracking-wider mb-4">
+              Audit Tecnico & Piano Strategico B2B
+            </div>
+            <h1 class="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-950 tracking-tight leading-tight">
+              T-Work & Gadget Sagl
+            </h1>
+            <p class="text-lg text-slate-600 font-medium mt-1">
+              Analisi di rendimento del sito attuale e piano di riprogettazione digitale.
+            </p>
+          </div>
+          
+          <div class="text-left sm:text-right text-xs text-slate-500 space-y-1 bg-slate-50 sm:bg-transparent p-4 sm:p-0 rounded-xl w-full sm:w-auto border sm:border-0 border-slate-200">
+            <div><strong class="text-slate-800">Destinatario:</strong> Emanuele Frigerio</div>
+            <div><strong class="text-slate-800">Sede:</strong> Piazza Boffalora 4, Chiasso (CH)</div>
+            <div><strong class="text-slate-800">Data:</strong> Settembre 2026</div>
+            <div><strong class="text-slate-800">Partner Tecnico:</strong> Kraken Web Development</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==========================================
+           SEZIONE 2: EXECUTIVE SUMMARY
+           ========================================== -->
+      <div class="mb-14">
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <i data-lucide="target" class="w-6 h-6 text-orange-600"></i>
+          1. Executive Summary: La Verità sui Numeri di Oggi
+        </h2>
+        
+        <p class="text-slate-700 leading-relaxed text-sm sm:text-base">
+          T-Work & Gadget è una realtà solida e apprezzata in Ticino per la fornitura di abbigliamento da lavoro certificato e articoli promozionali. Tuttavia, l'attuale sito web (<code class="bg-slate-100 text-orange-700 px-1.5 py-0.5 rounded text-sm font-semibold">t-workgadget.ch</code>) **non sta generando vendite né preventivi**: si comporta come un collo di bottiglia che disperde visitatori e frena l'acquisizione di nuove aziende clienti.
+        </p>
+
+        <div class="grid sm:grid-cols-3 gap-4 mt-6">
+          <div class="p-5 rounded-xl bg-red-50/80 border border-red-200">
+            <div class="text-red-700 font-bold text-xs uppercase tracking-wider">Invisibilità SEO</div>
+            <div class="text-2xl font-extrabold text-red-950 mt-1">0 Pagine Prodotto</div>
+            <p class="text-xs text-red-800 mt-1.5">I cataloghi sono su Google Drive. Google non indicizza nessun capo o marchio sul sito.</p>
+          </div>
+
+          <div class="p-5 rounded-xl bg-amber-50/80 border border-amber-200">
+            <div class="text-amber-700 font-bold text-xs uppercase tracking-wider">Perdita Lead Mobile</div>
+            <div class="text-2xl font-extrabold text-amber-950 mt-1">&gt; 70% Abbandono</div>
+            <p class="text-xs text-amber-800 mt-1.5">Scaricare PDF da 80 MB su cellulare per trovare un articolo fa scappare il cliente.</p>
+          </div>
+
+          <div class="p-5 rounded-xl bg-slate-100 border border-slate-300">
+            <div class="text-slate-700 font-bold text-xs uppercase tracking-wider">Costi Ricorrenti</div>
+            <div class="text-2xl font-extrabold text-slate-900 mt-1">Canone Webflow</div>
+            <p class="text-xs text-slate-600 mt-1.5">Costi mensili per 4 pagine statiche senza motore di preventivazione B2B.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-break"></div>
+
+      <!-- ==========================================
+           SEZIONE 3: I 5 ERRORI CRITICI DEL SITO ATTUALE
+           ========================================== -->
+      <div class="mb-14 pt-6">
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <i data-lucide="alert-octagon" class="w-6 h-6 text-red-600"></i>
+          2. Le 5 Criticità Bloccanti Rilevate dall'Audit
+        </h2>
+
+        <div class="space-y-4">
+          
+          <!-- Errore 1 -->
+          <div class="p-5 rounded-xl border border-slate-200 bg-white hover:border-orange-500/50 transition">
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-lg bg-red-100 text-red-700 flex items-center justify-center font-bold text-sm shrink-0">1</div>
+              <div>
+                <h3 class="text-base font-bold text-slate-900">Tag di Lingua Errato: Il sito dichiara di essere in tedesco</h3>
+                <p class="text-xs sm:text-sm text-slate-600 mt-1">
+                  Nel codice di tutte le pagine è presente l'attributo <code class="text-xs bg-slate-100 px-1 py-0.5 rounded text-red-600 font-mono">&lt;html lang="de"&gt;</code>. I testi sono scritti in italiano, ma per i motori di ricerca il sito è registrato come svizzero-tedesco. Risultato: Google penalizza drasticamente il posizionamento per le ricerche locali in Ticino.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Errore 2 -->
+          <div class="p-5 rounded-xl border border-slate-200 bg-white hover:border-orange-500/50 transition">
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-lg bg-red-100 text-red-700 flex items-center justify-center font-bold text-sm shrink-0">2</div>
+              <div>
+                <h3 class="text-base font-bold text-slate-900">Refusi Imbarazzanti nei Titoli di Primo Piano</h3>
+                <p class="text-xs sm:text-sm text-slate-600 mt-1">
+                  Nella Home Page compaiono evidenti errori ortografici: <span class="text-red-600 font-bold underline">"Abbigliamentpo promozionale"</span>, <span class="text-red-600 font-bold underline">"Abbigliamentpo da lavoro"</span> e <span class="text-red-600 font-bold underline">"Richiedi un offerta"</span> (senza apostrofo). Di fronte a un'azienda strutturata che deve investire migliaia di franchi in divise, questo errore riduce la fiducia percepita.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Errore 3 -->
+          <div class="p-5 rounded-xl border border-slate-200 bg-white hover:border-orange-500/50 transition">
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-lg bg-red-100 text-red-700 flex items-center justify-center font-bold text-sm shrink-0">3</div>
+              <div>
+                <h3 class="text-base font-bold text-slate-900">Icone Fantasma nella Barra di Navigazione</h3>
+                <p class="text-xs sm:text-sm text-slate-600 mt-1">
+                  In alto a destra sono presenti tre icone: Preferiti (cuore), Carrello (borsa) e Profilo utente. <strong>Non sono cliccabili e non portano a nulla</strong>. L'utente clicca pensando di gestire gli acquisti e conclude che il sito sia guasto.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Errore 4 -->
+          <div class="p-5 rounded-xl border border-slate-200 bg-white hover:border-orange-500/50 transition">
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-lg bg-red-100 text-red-700 flex items-center justify-center font-bold text-sm shrink-0">4</div>
+              <div>
+                <h3 class="text-base font-bold text-slate-900">La Trappola dei Cataloghi su Google Drive</h3>
+                <p class="text-xs sm:text-sm text-slate-600 mt-1">
+                  I 14 marchi distribuiti (Portwest, Sol's, Giblor's, Clique, Rossini, Siggi, ecc.) sono relegati a semplici bottoni che aprono file PDF esterni su Google Drive. L'utente viene espulso dal sito, e Google non può associare le parole chiave ("pantaloni alta visibilità Chiasso", "giacche cuoco Ticino") al dominio di T-Works.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Errore 5 -->
+          <div class="p-5 rounded-xl border border-slate-200 bg-white hover:border-orange-500/50 transition">
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-lg bg-red-100 text-red-700 flex items-center justify-center font-bold text-sm shrink-0">5</div>
+              <div>
+                <h3 class="text-base font-bold text-slate-900">Form Contatti Inadeguato e Falla Privacy</h3>
+                <p class="text-xs sm:text-sm text-slate-600 mt-1">
+                  Il modulo contatti invia i dati tramite metodo <code class="text-xs bg-slate-100 px-1 py-0.5 rounded text-slate-800 font-mono">GET</code>: nome, email, telefono e messaggio del cliente viaggiano in chiaro nella barra dell'URL del browser. Inoltre non c'è possibilità per il cliente di caricare il proprio logo aziendale vettoriale per farsi fare una bozza.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="page-break"></div>
+
+      <!-- ==========================================
+           SEZIONE 4: IL NUOVO PORTALE T-WORKS
+           ========================================== -->
+      <div class="mb-14 pt-6">
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <i data-lucide="sparkles" class="w-6 h-6 text-emerald-600"></i>
+          3. La Soluzione: Il Nuovo Portale B2B Kraken
+        </h2>
+        
+        <p class="text-slate-700 leading-relaxed text-sm sm:text-base mb-6">
+          Non proponiamo di "mettere una toppa" al vecchio template, ma di dare a T-Work & Gadget una **piattaforma di proprietà, ad altissima velocità e focalizzata sulla generazione di preventivi B2B**.
+        </p>
+
+        <div class="grid sm:grid-cols-2 gap-6">
+          
+          <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+            <div class="w-10 h-10 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center font-bold">
+              <i data-lucide="layout-grid" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-base font-bold text-slate-900">Catalogo Digitale Interattivo</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Tutti gli articoli suddivisi per categoria (Lavoro, DPI, Promozionale, Horeca, Gadget). Schede con varianti colore, taglie e dettagli tecnici indicizzabili singolarmente su Google.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+            <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold">
+              <i data-lucide="check-circle-2" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-base font-bold text-slate-900">Carrello Preventivo B2B con Upload Logo</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Il cliente seleziona i capi, indica le quantità stimate e trascina direttamente il proprio file logo (.AI, .PDF, .PNG). Emanuele riceve una richiesta completa e pronta da quotare.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+            <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center font-bold">
+              <i data-lucide="map-pin" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-base font-bold text-slate-900">SEO Locale Ticino & Svizzera</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Correzione tag linguistici, Schema.org LocalBusiness (Chiasso, Mendrisiotto, Lugano), rich snippet aziendali e posizionamento organico per le ricerche a maggior valore economico.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+            <div class="w-10 h-10 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center font-bold">
+              <i data-lucide="shield-check" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-base font-bold text-slate-900">Zero Canoni & Conformità nLPD</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Piena proprietà del codice senza essere vincolati a Webflow. Privacy policy conforme alla nuova Legge Federale Svizzera sulla Protezione dei Dati e sicurezza SSL svizzero.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ==========================================
+           SEZIONE 5: TABELLA COMPARATIVA
+           ========================================== -->
+      <div class="mb-14">
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <i data-lucide="scale" class="w-6 h-6 text-slate-700"></i>
+          4. Confronto Diretto: Prima vs. Dopo
+        </h2>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs sm:text-sm border-collapse">
+            <thead>
+              <tr class="border-b-2 border-slate-900 bg-slate-50">
+                <th class="py-3 px-4 font-bold text-slate-900">Caratteristica</th>
+                <th class="py-3 px-4 font-bold text-red-700">Sito Attuale (Webflow)</th>
+                <th class="py-3 px-4 font-bold text-emerald-700">Nuovo Portale Kraken</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              <tr>
+                <td class="py-3 px-4 font-semibold text-slate-800">Visualizzazione Cataloghi</td>
+                <td class="py-3 px-4 text-red-600">Link esterni a PDF Google Drive</td>
+                <td class="py-3 px-4 text-emerald-600 font-semibold">Catalogo digitale interattivo con filtri</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4 font-semibold text-slate-800">Richiesta Preventivo</td>
+                <td class="py-3 px-4 text-red-600">Semplice mailto o form testo</td>
+                <td class="py-3 px-4 text-emerald-600 font-semibold">Carrello quotazione + Caricamento Logo</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4 font-semibold text-slate-800">Indicizzazione Motori (SEO)</td>
+                <td class="py-3 px-4 text-red-600">Penalizzato da tag lingua "de" e zero prodotti</td>
+                <td class="py-3 px-4 text-emerald-600 font-semibold">SEO territoriale Ticino + Schema.org locale</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4 font-semibold text-slate-800">Esperienza da Cellulare</td>
+                <td class="py-3 px-4 text-red-600">Scarsa (PDF pesanti, icone rotte)</td>
+                <td class="py-3 px-4 text-emerald-600 font-semibold">Mobile-First fluido con WhatsApp rapido</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4 font-semibold text-slate-800">Costi Ricorrenti</td>
+                <td class="py-3 px-4 text-red-600">Abbonamento mensile Webflow continuo</td>
+                <td class="py-3 px-4 text-emerald-600 font-semibold">Piattaforma di proprietà, hosting snello</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="page-break"></div>
+
+      <!-- ==========================================
+           SEZIONE 6: ROADMAP & PROSSIMI PASSI
+           ========================================== -->
+      <div class="pt-6">
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <i data-lucide="calendar" class="w-6 h-6 text-orange-600"></i>
+          5. Roadmap di Realizzazione (Consegna in 4 Settimane)
+        </h2>
+
+        <div class="relative border-l-2 border-orange-500 ml-4 pl-6 space-y-6 my-8">
+          <div>
+            <span class="absolute -left-2.5 top-1.5 w-5 h-5 rounded-full bg-orange-600 border-4 border-white"></span>
+            <h4 class="text-sm font-bold text-slate-900">Settimana 1: Wireframe e Approvazione Struttura</h4>
+            <p class="text-xs text-slate-600 mt-0.5">Definizione categorie, selezione dei prodotti di punta per brand e accordo grafico.</p>
+          </div>
+          <div>
+            <span class="absolute -left-2.5 top-1.5 w-5 h-5 rounded-full bg-orange-600 border-4 border-white"></span>
+            <h4 class="text-sm font-bold text-slate-900">Settimane 2-3: Sviluppo Piattaforma & Preventivatore</h4>
+            <p class="text-xs text-slate-600 mt-0.5">Programmazione catalogo, sistema preventivi con upload file e schede prodotto.</p>
+          </div>
+          <div>
+            <span class="absolute -left-2.5 top-1.5 w-5 h-5 rounded-full bg-orange-600 border-4 border-white"></span>
+            <h4 class="text-sm font-bold text-slate-900">Settimana 4: SEO Locale, nLPD & Messa Online</h4>
+            <p class="text-xs text-slate-600 mt-0.5">Configurazione DNS sul dominio t-workgadget.ch, Schema.org e collaudo finale.</p>
+          </div>
+        </div>
+
+        <!-- BOX CTA FINALE -->
+        <div class="p-8 rounded-2xl bg-gradient-to-r from-slate-900 to-slate-850 text-white flex flex-col sm:flex-row items-center justify-between gap-6 mt-10">
+          <div>
+            <h3 class="text-xl font-bold">Guarda il Prototipo dal Vivo</h3>
+            <p class="text-xs sm:text-sm text-slate-300 mt-1 max-w-lg">
+              Abbiamo già realizzato una prima versione dimostrativa funzionante con il nuovo catalogo e preventivatore rapido.
+            </p>
+          </div>
+          <div class="shrink-0 flex gap-3">
+            <a href="demo-prototype/index.html" target="_blank" class="px-6 py-3 rounded-xl bg-orange-600 hover:bg-orange-500 text-white font-bold text-xs sm:text-sm transition shadow-lg shadow-orange-600/30 inline-flex items-center gap-2">
+              <i data-lucide="play" class="w-4 h-4 fill-white"></i>
+              <span>Apri Demo Funzionante</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- FOOTER FIRME -->
+        <div class="mt-14 pt-8 border-t border-slate-200 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+          <div>Dossier riservato redatto da <strong>Kraken Web Development</strong> per <strong>T-Work & Gadget Sagl</strong>.</div>
+          <div>Pagina 1 di 4 • Chiasso (CH)</div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
