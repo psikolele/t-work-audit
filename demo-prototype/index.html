@@ -257,186 +257,54 @@
         </div>
       </div>
 
-      <!-- FILTER TABS -->
-      <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-8 border-b border-slate-100">
-        <button onclick="setCategory('all')" class="cat-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap bg-orange-600 text-white transition shadow-sm" data-category="all">Tutti gli Articoli</button>
-        <button onclick="setCategory('lavoro')" class="cat-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200 transition" data-category="lavoro">Abbigliamento da Lavoro & DPI</button>
-        <button onclick="setCategory('promo')" class="cat-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200 transition" data-category="promo">Abbigliamento Promozionale</button>
-        <button onclick="setCategory('gadget')" class="cat-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200 transition" data-category="gadget">Gadget & Articoli Tech</button>
-        <button onclick="setCategory('horeca')" class="cat-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200 transition" data-category="horeca">Horeca & Divise Cucina</button>
+      <!-- FILTER TABS WITH COUNTERS -->
+      <div class="flex items-center gap-2.5 overflow-x-auto pb-4 mb-8 border-b border-slate-100">
+        <button onclick="setCategory('all')" class="cat-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap bg-orange-600 text-white transition shadow-sm flex items-center gap-2" data-category="all">
+          <span>Tutti gli Articoli</span>
+          <span class="px-1.5 py-0.5 rounded-md bg-white/20 text-[10px]">16</span>
+        </button>
+        <button onclick="setCategory('lavoro')" class="cat-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200 transition flex items-center gap-2" data-category="lavoro">
+          <i data-lucide="shield-check" class="w-4 h-4 text-orange-600"></i>
+          <span>Abbigliamento da Lavoro & DPI</span>
+          <span class="px-1.5 py-0.5 rounded-md bg-slate-200/80 text-[10px] font-bold">4</span>
+        </button>
+        <button onclick="setCategory('promo')" class="cat-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200 transition flex items-center gap-2" data-category="promo">
+          <i data-lucide="shirt" class="w-4 h-4 text-blue-600"></i>
+          <span>Abbigliamento Promozionale</span>
+          <span class="px-1.5 py-0.5 rounded-md bg-slate-200/80 text-[10px] font-bold">4</span>
+        </button>
+        <button onclick="setCategory('gadget')" class="cat-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200 transition flex items-center gap-2" data-category="gadget">
+          <i data-lucide="sparkles" class="w-4 h-4 text-purple-600"></i>
+          <span>Gadget & Articoli Tech</span>
+          <span class="px-1.5 py-0.5 rounded-md bg-slate-200/80 text-[10px] font-bold">4</span>
+        </button>
+        <button onclick="setCategory('horeca')" class="cat-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200 transition flex items-center gap-2" data-category="horeca">
+          <i data-lucide="utensils" class="w-4 h-4 text-emerald-600"></i>
+          <span>Horeca & Divise Cucina</span>
+          <span class="px-1.5 py-0.5 rounded-md bg-slate-200/80 text-[10px] font-bold">4</span>
+        </button>
       </div>
 
-      <!-- PRODUCT GRID -->
+      <!-- PRODUCT GRID (GENERATO DINAMICAMENTE DA E-COMMERCE ENGINE) -->
       <div id="productGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-7">
-        
-        <!-- PRODOTTO 1 -->
-        <div class="product-card group bg-white rounded-2xl border border-slate-200/90 overflow-hidden hover:shadow-2xl hover:border-orange-500/30 hover:-translate-y-1.5 transition-all duration-300 flex flex-col" data-category="lavoro" data-name="Giacca Alta Visibilità Multitasche Portwest">
-          <div class="relative h-60 bg-slate-100 overflow-hidden">
-            <span class="absolute top-3 left-3 bg-slate-950/80 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1 rounded-full border border-white/10 shadow-sm z-10">Portwest</span>
-            <img src="https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=600&q=80" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=600&q=80'" alt="Giacca Alta Visibilità" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+        <!-- Injected via JavaScript for live filtering & interaction -->
+      </div>
+      
+      <!-- BANNER DIMOSTRATIVO E-COMMERCE -->
+      <div class="mt-12 p-6 rounded-2xl bg-gradient-to-r from-orange-50 via-amber-50 to-orange-50 border border-orange-200/80 flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-2xl bg-orange-600 text-white flex items-center justify-center font-bold text-xl shadow-md shadow-orange-600/30 shrink-0">
+            <i data-lucide="sliders-horizontal" class="w-6 h-6"></i>
           </div>
-          <div class="p-5 flex-1 flex flex-col justify-between">
-            <div>
-              <span class="text-[11px] font-extrabold text-orange-600 uppercase tracking-wider">Norma EN ISO 20471</span>
-              <h3 class="font-extrabold text-slate-900 group-hover:text-orange-600 transition-colors mt-1 text-[16px] leading-snug">Giacca Alta Visibilità Multitasche</h3>
-              <p class="text-xs text-slate-500 mt-1.5 leading-relaxed line-clamp-2">Impermeabile e traspirante con bande riflettenti certificate. Ideale per cantieri e logistica in Ticino.</p>
-            </div>
-            <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
-              <span class="text-[11px] text-slate-500 font-medium">Taglie: S - 4XL</span>
-              <button onclick="addToQuote('Giacca Alta Visibilità Portwest', 'Portwest', 'Lavoro')" class="px-3.5 py-2 min-h-[40px] bg-orange-50 text-orange-700 hover:bg-orange-600 hover:text-white rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 active:scale-95 shadow-xs">
-                <i data-lucide="plus" class="w-3.5 h-3.5"></i> Preventivo
-              </button>
-            </div>
+          <div>
+            <h4 class="text-base font-extrabold text-slate-900">Simulatore E-Commerce B2B Attivo</h4>
+            <p class="text-xs text-slate-600 mt-0.5">Clicca su qualsiasi articolo per aprire la <strong>Scheda Prodotto E-Commerce</strong>: prova a cambiare colore, taglia, quantità e tecnica di personalizzazione per vedere il ricalcolo in tempo reale.</p>
           </div>
         </div>
-
-        <!-- PRODOTTO 2 -->
-        <div class="product-card group bg-white rounded-2xl border border-slate-200/90 overflow-hidden hover:shadow-2xl hover:border-orange-500/30 hover:-translate-y-1.5 transition-all duration-300 flex flex-col" data-category="promo" data-name="Hoodie Premium Felpa con Cappuccio Clique">
-          <div class="relative h-60 bg-slate-100 overflow-hidden">
-            <span class="absolute top-3 left-3 bg-slate-950/80 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1 rounded-full border border-white/10 shadow-sm z-10">Clique</span>
-            <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=600&q=80" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=600&q=80'" alt="Felpa Clique" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-          </div>
-          <div class="p-5 flex-1 flex flex-col justify-between">
-            <div>
-              <span class="text-[11px] font-extrabold text-orange-600 uppercase tracking-wider">Corporate & Eventi</span>
-              <h3 class="font-extrabold text-slate-900 group-hover:text-orange-600 transition-colors mt-1 text-[16px] leading-snug">Felpa Classic Hooded Cardigan</h3>
-              <p class="text-xs text-slate-500 mt-1.5 leading-relaxed line-clamp-2">Cotone pettinato ad alta densità. Resa perfetta per ricamo a rilievo o stampa transfer serigrafica.</p>
-            </div>
-            <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
-              <span class="text-[11px] text-slate-500 font-medium">18 Colori disponibili</span>
-              <button onclick="addToQuote('Felpa Hooded Cardigan', 'Clique', 'Promozionale')" class="px-3.5 py-2 min-h-[40px] bg-orange-50 text-orange-700 hover:bg-orange-600 hover:text-white rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 active:scale-95 shadow-xs">
-                <i data-lucide="plus" class="w-3.5 h-3.5"></i> Preventivo
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- PRODOTTO 3 (IMMAGINE AGGIORNATA & IMPECCABILE) -->
-        <div class="product-card group bg-white rounded-2xl border border-slate-200/90 overflow-hidden hover:shadow-2xl hover:border-orange-500/30 hover:-translate-y-1.5 transition-all duration-300 flex flex-col" data-category="lavoro" data-name="Pantaloni Elasticizzati Multitasche Rossini">
-          <div class="relative h-60 bg-slate-100 overflow-hidden">
-            <span class="absolute top-3 left-3 bg-slate-950/80 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1 rounded-full border border-white/10 shadow-sm z-10">Rossini</span>
-            <img src="https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=600&q=80" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1506629082955-511b1aa562c8?auto=format&fit=crop&w=600&q=80'" alt="Pantalone Stretch Tech Rossini" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-          </div>
-          <div class="p-5 flex-1 flex flex-col justify-between">
-            <div>
-              <span class="text-[11px] font-extrabold text-orange-600 uppercase tracking-wider">Workwear Resistente</span>
-              <h3 class="font-extrabold text-slate-900 group-hover:text-orange-600 transition-colors mt-1 text-[16px] leading-snug">Pantalone Stretch Tech Rossini</h3>
-              <p class="text-xs text-slate-500 mt-1.5 leading-relaxed line-clamp-2">Tessuto elasticizzato anti-strappo con tasche porta-metro e rinforzi in Cordura alle ginocchia.</p>
-            </div>
-            <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
-              <span class="text-[11px] text-slate-500 font-medium">Taglie: 42 - 64</span>
-              <button onclick="addToQuote('Pantalone Stretch Tech', 'Rossini', 'Lavoro')" class="px-3.5 py-2 min-h-[40px] bg-orange-50 text-orange-700 hover:bg-orange-600 hover:text-white rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 active:scale-95 shadow-xs">
-                <i data-lucide="plus" class="w-3.5 h-3.5"></i> Preventivo
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- PRODOTTO 4 -->
-        <div class="product-card group bg-white rounded-2xl border border-slate-200/90 overflow-hidden hover:shadow-2xl hover:border-orange-500/30 hover:-translate-y-1.5 transition-all duration-300 flex flex-col" data-category="horeca" data-name="Giacca Cuoco Chef Giblors Traspirante">
-          <div class="relative h-60 bg-slate-100 overflow-hidden">
-            <span class="absolute top-3 left-3 bg-slate-950/80 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1 rounded-full border border-white/10 shadow-sm z-10">Giblor's</span>
-            <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=600&q=80" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=600&q=80'" alt="Giacca Cuoco Giblor" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-          </div>
-          <div class="p-5 flex-1 flex flex-col justify-between">
-            <div>
-              <span class="text-[11px] font-extrabold text-orange-600 uppercase tracking-wider">Horeca & Ristorazione</span>
-              <h3 class="font-extrabold text-slate-900 group-hover:text-orange-600 transition-colors mt-1 text-[16px] leading-snug">Giacca Chef Executive Giblor's</h3>
-              <p class="text-xs text-slate-500 mt-1.5 leading-relaxed line-clamp-2">Design sartoriale italiano con retro in rete traspirante Airweb. Bottoni a pressione a scomparsa.</p>
-            </div>
-            <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
-              <span class="text-[11px] text-slate-500 font-medium">Colori: Bianco / Nero</span>
-              <button onclick="addToQuote('Giacca Chef Executive', 'Giblor’s', 'Horeca')" class="px-3.5 py-2 min-h-[40px] bg-orange-50 text-orange-700 hover:bg-orange-600 hover:text-white rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 active:scale-95 shadow-xs">
-                <i data-lucide="plus" class="w-3.5 h-3.5"></i> Preventivo
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- PRODOTTO 5 -->
-        <div class="product-card group bg-white rounded-2xl border border-slate-200/90 overflow-hidden hover:shadow-2xl hover:border-orange-500/30 hover:-translate-y-1.5 transition-all duration-300 flex flex-col" data-category="gadget" data-name="Borraccia Termica Inox Incisa Laser Makito">
-          <div class="relative h-60 bg-slate-100 overflow-hidden">
-            <span class="absolute top-3 left-3 bg-slate-950/80 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1 rounded-full border border-white/10 shadow-sm z-10">Makito</span>
-            <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=600&q=80" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=600&q=80'" alt="Borraccia Termica" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-          </div>
-          <div class="p-5 flex-1 flex flex-col justify-between">
-            <div>
-              <span class="text-[11px] font-extrabold text-orange-600 uppercase tracking-wider">Gadget Sostenibile</span>
-              <h3 class="font-extrabold text-slate-900 group-hover:text-orange-600 transition-colors mt-1 text-[16px] leading-snug">Thermal Bottle 500ml Inox</h3>
-              <p class="text-xs text-slate-500 mt-1.5 leading-relaxed line-clamp-2">Doppia parete sottovuoto. Mantieni caldo 12h e freddo 24h. Personalizzabile con incisione laser del logo.</p>
-            </div>
-            <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
-              <span class="text-[11px] text-slate-500 font-medium">Minimo: 50 pz</span>
-              <button onclick="addToQuote('Thermal Bottle 500ml', 'Makito', 'Gadget')" class="px-3.5 py-2 min-h-[40px] bg-orange-50 text-orange-700 hover:bg-orange-600 hover:text-white rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 active:scale-95 shadow-xs">
-                <i data-lucide="plus" class="w-3.5 h-3.5"></i> Preventivo
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- PRODOTTO 6 -->
-        <div class="product-card group bg-white rounded-2xl border border-slate-200/90 overflow-hidden hover:shadow-2xl hover:border-orange-500/30 hover:-translate-y-1.5 transition-all duration-300 flex flex-col" data-category="promo" data-name="T-Shirt Cotone Organico Sols Regent">
-          <div class="relative h-60 bg-slate-100 overflow-hidden">
-            <span class="absolute top-3 left-3 bg-slate-950/80 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1 rounded-full border border-white/10 shadow-sm z-10">Sol's</span>
-            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=600&q=80" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=600&q=80'" alt="T-Shirt Sol's" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-          </div>
-          <div class="p-5 flex-1 flex flex-col justify-between">
-            <div>
-              <span class="text-[11px] font-extrabold text-orange-600 uppercase tracking-wider">Best Seller Promozionale</span>
-              <h3 class="font-extrabold text-slate-900 group-hover:text-orange-600 transition-colors mt-1 text-[16px] leading-snug">T-Shirt Regent 150g Cotone</h3>
-              <p class="text-xs text-slate-500 mt-1.5 leading-relaxed line-clamp-2">Il punto di riferimento per eventi aziendali, team building e merchandising. Oltre 40 tinte disponibili.</p>
-            </div>
-            <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
-              <span class="text-[11px] text-slate-500 font-medium">40+ Colori</span>
-              <button onclick="addToQuote('T-Shirt Regent 150g', 'Sol’s', 'Promozionale')" class="px-3.5 py-2 min-h-[40px] bg-orange-50 text-orange-700 hover:bg-orange-600 hover:text-white rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 active:scale-95 shadow-xs">
-                <i data-lucide="plus" class="w-3.5 h-3.5"></i> Preventivo
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- PRODOTTO 7 (NUOVO - SCARPE ANTINFORTUNISTICA S3) -->
-        <div class="product-card group bg-white rounded-2xl border border-slate-200/90 overflow-hidden hover:shadow-2xl hover:border-orange-500/30 hover:-translate-y-1.5 transition-all duration-300 flex flex-col" data-category="lavoro" data-name="Scarpa Antinfortunistica S3 SRC Portwest Steelite">
-          <div class="relative h-60 bg-slate-100 overflow-hidden">
-            <span class="absolute top-3 left-3 bg-slate-950/80 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1 rounded-full border border-white/10 shadow-sm z-10">Portwest</span>
-            <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=600&q=80" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=600&q=80'" alt="Scarpa Antinfortunistica Portwest" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-          </div>
-          <div class="p-5 flex-1 flex flex-col justify-between">
-            <div>
-              <span class="text-[11px] font-extrabold text-orange-600 uppercase tracking-wider">Calzature DPI Certificate</span>
-              <h3 class="font-extrabold text-slate-900 group-hover:text-orange-600 transition-colors mt-1 text-[16px] leading-snug">Scarpa S3 SRC Steelite Portwest</h3>
-              <p class="text-xs text-slate-500 mt-1.5 leading-relaxed line-clamp-2">Puntale in acciaio e lamina anti-perforazione. Suola antiscivolo resistente a oli e idrocarburi per l'industria ticinese.</p>
-            </div>
-            <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
-              <span class="text-[11px] text-slate-500 font-medium">Taglie: 38 - 48</span>
-              <button onclick="addToQuote('Scarpa S3 Steelite', 'Portwest', 'Lavoro')" class="px-3.5 py-2 min-h-[40px] bg-orange-50 text-orange-700 hover:bg-orange-600 hover:text-white rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 active:scale-95 shadow-xs">
-                <i data-lucide="plus" class="w-3.5 h-3.5"></i> Preventivo
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- PRODOTTO 8 (NUOVO - POLO CORPORATE PIQUE) -->
-        <div class="product-card group bg-white rounded-2xl border border-slate-200/90 overflow-hidden hover:shadow-2xl hover:border-orange-500/30 hover:-translate-y-1.5 transition-all duration-300 flex flex-col" data-category="promo" data-name="Polo Piqué Cotone Pettinato Sols Pasadena">
-          <div class="relative h-60 bg-slate-100 overflow-hidden">
-            <span class="absolute top-3 left-3 bg-slate-950/80 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1 rounded-full border border-white/10 shadow-sm z-10">Sol's</span>
-            <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=600&q=80" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=600&q=80'" alt="Polo Piqué Sol's" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-          </div>
-          <div class="p-5 flex-1 flex flex-col justify-between">
-            <div>
-              <span class="text-[11px] font-extrabold text-orange-600 uppercase tracking-wider">Corporate & Divise Staff</span>
-              <h3 class="font-extrabold text-slate-900 group-hover:text-orange-600 transition-colors mt-1 text-[16px] leading-snug">Polo Pasadena 200g Ringspun</h3>
-              <p class="text-xs text-slate-500 mt-1.5 leading-relaxed line-clamp-2">Colletto a costine con bordo a contrasto. La scelta d'eccellenza per ricamo personalizzato per studi e aziende.</p>
-            </div>
-            <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
-              <span class="text-[11px] text-slate-500 font-medium">20+ Tinte bicolore</span>
-              <button onclick="addToQuote('Polo Pasadena 200g', 'Sol’s', 'Promozionale')" class="px-3.5 py-2 min-h-[40px] bg-orange-50 text-orange-700 hover:bg-orange-600 hover:text-white rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 active:scale-95 shadow-xs">
-                <i data-lucide="plus" class="w-3.5 h-3.5"></i> Preventivo
-              </button>
-            </div>
-          </div>
-        </div>
-
+        <button onclick="openProductModal('p1')" class="shrink-0 px-5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold transition flex items-center gap-2 shadow-md">
+          <i data-lucide="eye" class="w-4 h-4 text-orange-400"></i>
+          <span>Prova Scheda Rapida</span>
+        </button>
       </div>
 
     </div>
@@ -664,7 +532,156 @@
     </div>
   </footer>
 
-  <!-- QUOTE SLIDE-OVER DRAWER -->
+    <!-- MODALE SCHEDA PRODOTTO E-COMMERCE (INTERACTIVE QUICK VIEW) -->
+  <div id="productModal" class="fixed inset-0 z-50 overflow-y-auto hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <div class="fixed inset-0 bg-slate-950/70 backdrop-blur-sm transition-opacity" onclick="closeProductModal()"></div>
+    <div class="flex min-h-full items-center justify-center p-3 sm:p-6">
+      <div class="relative transform overflow-hidden rounded-3xl bg-white shadow-2xl transition-all w-full max-w-4xl border border-slate-200 z-10 my-8">
+        
+        <!-- Header bar modale -->
+        <div class="px-6 py-4 bg-slate-900 text-white flex items-center justify-between border-b border-slate-800">
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-300">Simulazione Scheda E-Commerce B2B</span>
+          </div>
+          <button onclick="closeProductModal()" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white flex items-center justify-center transition">
+            <i data-lucide="x" class="w-4 h-4"></i>
+          </button>
+        </div>
+
+        <div class="grid md:grid-cols-12 gap-6 sm:gap-8 p-6 sm:p-8">
+          <!-- Colonna Sinistra: Immagine & Specifiche -->
+          <div class="md:col-span-5 space-y-4">
+            <div class="relative h-72 sm:h-80 rounded-2xl bg-slate-100 overflow-hidden border border-slate-200">
+              <span id="modalBrand" class="absolute top-3 left-3 bg-slate-950/85 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1 rounded-full border border-white/10 z-10 shadow-sm">Brand</span>
+              <img id="modalImg" src="" alt="Prodotto" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
+            </div>
+
+            <!-- Mini gallery preview -->
+            <div class="grid grid-cols-3 gap-2">
+              <div class="h-16 rounded-xl border-2 border-orange-500 overflow-hidden bg-slate-100 p-0.5 cursor-pointer">
+                <img id="modalThumb1" src="" class="w-full h-full object-cover rounded-lg" />
+              </div>
+              <div class="h-16 rounded-xl border border-slate-200 overflow-hidden bg-slate-100 p-0.5 opacity-60 hover:opacity-100 cursor-pointer transition">
+                <img id="modalThumb2" src="" class="w-full h-full object-cover rounded-lg" />
+              </div>
+              <div class="h-16 rounded-xl border border-slate-200 overflow-hidden bg-slate-50 flex items-center justify-center text-[10px] text-slate-400 font-bold p-1 text-center">
+                +3 Angolazioni
+              </div>
+            </div>
+
+            <!-- Trust Pills -->
+            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1.5 text-xs text-slate-600">
+              <div class="flex items-center gap-2">
+                <i data-lucide="truck" class="w-3.5 h-3.5 text-orange-600"></i>
+                <span>Consegna rapida in tutto il Ticino</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="shield-check" class="w-3.5 h-3.5 text-emerald-600"></i>
+                <span>Certificazione e conformità garantita</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Colonna Destra: Configurazione Varianti & Prezzo -->
+          <div class="md:col-span-7 space-y-4">
+            <div>
+              <div class="flex items-center gap-2 mb-1">
+                <span id="modalCategory" class="text-[11px] font-extrabold uppercase tracking-wider text-orange-600">Categoria</span>
+                <span class="text-slate-300">•</span>
+                <span id="modalSku" class="text-[11px] font-mono text-slate-400">SKU</span>
+              </div>
+              <h2 id="modalTitle" class="text-xl sm:text-2xl font-black text-slate-950 tracking-tight leading-snug">Nome Prodotto</h2>
+              <p id="modalDesc" class="text-xs text-slate-500 mt-1 leading-relaxed">Descrizione</p>
+            </div>
+
+            <!-- Scaletta Prezzi B2B a Scaglioni -->
+            <div class="p-3 rounded-xl bg-orange-50/70 border border-orange-200/70">
+              <div class="text-[10px] font-bold text-orange-950 uppercase tracking-wide mb-1.5 flex items-center justify-between">
+                <span class="flex items-center gap-1"><i data-lucide="tag" class="w-3 h-3 text-orange-600"></i> Prezzo indicativo a scaglioni (B2B):</span>
+                <span class="text-[10px] text-orange-700 font-semibold">IVA escl.</span>
+              </div>
+              <div class="grid grid-cols-3 gap-2 text-center text-xs">
+                <div class="p-1.5 bg-white rounded-lg border border-orange-100 shadow-xs">
+                  <span class="text-slate-400 block text-[9px]">25 - 49 pz</span>
+                  <span id="priceTier1" class="font-bold text-slate-800 text-xs">CHF 0.00</span>
+                </div>
+                <div class="p-1.5 bg-white rounded-lg border border-orange-200 shadow-xs ring-1 ring-orange-500/30">
+                  <span class="text-orange-600 font-bold block text-[9px]">50 - 99 pz (-15%)</span>
+                  <span id="priceTier2" class="font-extrabold text-orange-600 text-xs">CHF 0.00</span>
+                </div>
+                <div class="p-1.5 bg-white rounded-lg border border-orange-100 shadow-xs">
+                  <span class="text-emerald-600 font-bold block text-[9px]">100+ pz (-25%)</span>
+                  <span id="priceTier3" class="font-extrabold text-emerald-700 text-xs">CHF 0.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Varianti Colore Interattive -->
+            <div>
+              <div class="flex items-center justify-between text-xs mb-1.5">
+                <span class="font-bold text-slate-800">1. Scegli il Colore:</span>
+                <span id="selectedColorName" class="text-orange-600 font-bold text-xs">Nero</span>
+              </div>
+              <div id="modalColors" class="flex items-center gap-2">
+                <!-- Color dots -->
+              </div>
+            </div>
+
+            <!-- Taglie Interattive -->
+            <div>
+              <div class="flex items-center justify-between text-xs mb-1.5">
+                <span class="font-bold text-slate-800">2. Seleziona Taglia:</span>
+                <span id="selectedSizeName" class="text-slate-500 text-[11px]">M (Assortibile)</span>
+              </div>
+              <div id="modalSizes" class="flex flex-wrap gap-1.5">
+                <!-- Size chips -->
+              </div>
+            </div>
+
+            <!-- Tecnica di Personalizzazione -->
+            <div>
+              <label class="block text-xs font-bold text-slate-800 mb-1">3. Personalizzazione del Logo:</label>
+              <select id="modalTechnique" onchange="updateModalPrice()" class="w-full px-3 py-2 rounded-xl border border-slate-200 text-xs font-semibold focus:ring-2 focus:ring-orange-500 focus:outline-none bg-white">
+                <option value="ricamo" selected>Ricamo Diretto ad Alta Definizione (Ideale divise e polo)</option>
+                <option value="serigrafia">Serigrafia Tessile (Ideale per grandi tirature)</option>
+                <option value="dtf">Stampa Digitale DTF a Colori (Sfumature fotografiche)</option>
+                <option value="laser">Incisione Laser Indelebile (Per borracce e metallo)</option>
+                <option value="neutro">Nessuna personalizzazione (Capi neutri da catalogo)</option>
+              </select>
+            </div>
+
+            <!-- Quantità & Calcolo Dinamico -->
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between gap-4">
+              <div class="flex items-center gap-2.5">
+                <span class="text-xs font-bold text-slate-700">Q.tà:</span>
+                <div class="flex items-center border border-slate-200 rounded-xl overflow-hidden bg-slate-50">
+                  <button onclick="adjustModalQty(-5)" class="px-2.5 py-1.5 text-slate-600 hover:bg-slate-200 font-bold text-xs transition">-</button>
+                  <input type="number" id="modalQty" value="50" min="5" step="5" onchange="updateModalPrice()" class="w-14 py-1.5 text-center text-xs font-black text-slate-900 bg-transparent focus:outline-none" />
+                  <button onclick="adjustModalQty(5)" class="px-2.5 py-1.5 text-slate-600 hover:bg-slate-200 font-bold text-xs transition">+</button>
+                </div>
+              </div>
+
+              <div class="text-right">
+                <span class="text-[10px] text-slate-400 block uppercase tracking-wider">Subtotale Indicativo:</span>
+                <span id="modalTotalPrice" class="text-lg font-black text-slate-950">CHF 0.00</span>
+              </div>
+            </div>
+
+            <!-- Pulsante Aggiungi a Preventivo -->
+            <button onclick="addModalProductToQuote()" class="w-full py-3.5 rounded-xl bg-orange-600 hover:bg-orange-700 text-white font-bold text-xs sm:text-sm shadow-md shadow-orange-600/25 transition-all flex items-center justify-center gap-2 hover:scale-[1.01] active:scale-95">
+              <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+              <span>Aggiungi al Preventivo B2B</span>
+            </button>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<!-- QUOTE SLIDE-OVER DRAWER -->
   <div id="quoteDrawer" class="fixed inset-0 z-50 overflow-hidden hidden" aria-labelledby="slide-over-title" role="dialog" aria-modal="true">
     <div class="absolute inset-0 bg-slate-950/60 backdrop-blur-sm transition-opacity" onclick="toggleQuoteDrawer()"></div>
 
@@ -719,54 +736,654 @@
     </div>
   </div>
 
-  <!-- SCRIPT DINAMICO PROTOTIPO -->
+  <!-- SCRIPT DINAMICO PROTOTIPO & E-COMMERCE ENGINE -->
   <script>
-    lucide.createIcons();
+    const PRODUCTS = [
+      // 1. LAVORO & DPI (4 articoli)
+      {
+        id: 'p1',
+        category: 'lavoro',
+        categoryLabel: 'Lavoro & DPI',
+        badge: 'Norma EN ISO 20471',
+        brand: 'Portwest',
+        sku: 'PW-S460',
+        name: 'Giacca Alta Visibilità Multitasche',
+        desc: 'Impermeabile e traspirante con bande riflettenti certificate 3M. Cuciture termonastrate, cappuccio a scomparsa e tasche scaldamani per cantieri e logistica in Ticino.',
+        price: 48.50,
+        image: 'https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=600&q=80',
+        colors: [
+          { name: 'Giallo Fluo / Navy', hex: '#eab308' },
+          { name: 'Arancio Fluo / Navy', hex: '#ea580c' },
+          { name: 'Giallo Fluo Integrale', hex: '#facc15' }
+        ],
+        sizes: ['S', 'M', 'L', 'XL', '2XL', '3XL', '4XL']
+      },
+      {
+        id: 'p2',
+        category: 'lavoro',
+        categoryLabel: 'Lavoro & DPI',
+        badge: 'Workwear Resistente',
+        brand: 'Rossini',
+        sku: 'RO-ST700',
+        name: 'Pantalone Stretch Tech Cordura',
+        desc: 'Tessuto 4-way stretch elasticizzato antistrappo con tasche multifunzione, porta-metro e rinforzi in Cordura su ginocchia con alloggiamento ginocchiere.',
+        price: 42.00,
+        image: 'https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=600&q=80',
+        colors: [
+          { name: 'Grigio Antracite / Nero', hex: '#334155' },
+          { name: 'Blu Navy', hex: '#1e3a8a' },
+          { name: 'Nero Assoluto', hex: '#0f172a' }
+        ],
+        sizes: ['42', '44', '46', '48', '50', '52', '54', '56']
+      },
+      {
+        id: 'p3',
+        category: 'lavoro',
+        categoryLabel: 'Lavoro & DPI',
+        badge: 'Calzatura S3 SRC',
+        brand: 'Portwest',
+        sku: 'PW-FW69',
+        name: 'Scarpa S3 SRC Steelite Portwest',
+        desc: 'Pelle bovina fiore idrorepellente con puntale in acciaio 200J e lamina anti-perforazione in composito flessibile. Suola antiscivolo antistatica.',
+        price: 59.00,
+        image: 'https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=600&q=80',
+        colors: [
+          { name: 'Nero / Inserti Orange', hex: '#0f172a' },
+          { name: 'Marrone Scuro', hex: '#78350f' }
+        ],
+        sizes: ['38', '39', '40', '41', '42', '43', '44', '45', '46', '47']
+      },
+      {
+        id: 'p4',
+        category: 'lavoro',
+        categoryLabel: 'Lavoro & DPI',
+        badge: 'Leggero & Traspirante',
+        brand: 'Neri',
+        sku: 'NE-GL80',
+        name: 'Gilet Multitasche Safety Mesh',
+        desc: 'Gilet da cantiere smanicato con inserti in rete mesh dorsale super-traspirante, porta-badge trasparente e 9 tasche per attrezzi e smartphone.',
+        price: 28.50,
+        image: 'https://images.unsplash.com/photo-1508296695146-257a814070b4?auto=format&fit=crop&w=600&q=80',
+        colors: [
+          { name: 'Blu Navy / Grigio', hex: '#1e293b' },
+          { name: 'Beige Sabbia', hex: '#d4b996' },
+          { name: 'Nero', hex: '#020617' }
+        ],
+        sizes: ['M', 'L', 'XL', '2XL', '3XL']
+      },
 
+      // 2. ABBIGLIAMENTO PROMOZIONALE (4 articoli)
+      {
+        id: 'p5',
+        category: 'promo',
+        categoryLabel: 'Promozionale',
+        badge: 'Corporate & Eventi',
+        brand: 'Clique',
+        sku: 'CQ-021045',
+        name: 'Felpa Classic Hooded Cardigan',
+        desc: 'Cotone pettinato 300g ad alta densità con zip intera YKK in metallo e cappuccio con cordino piatto. Resa perfetta per ricamo volumetrico.',
+        price: 36.00,
+        image: 'https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=600&q=80',
+        colors: [
+          { name: 'Grigio Melange', hex: '#94a3b8' },
+          { name: 'Nero Profondo', hex: '#0f172a' },
+          { name: 'Blu Navy', hex: '#1e3a8a' },
+          { name: 'Rosso Corsa', hex: '#dc2626' }
+        ],
+        sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL', '3XL']
+      },
+      {
+        id: 'p6',
+        category: 'promo',
+        categoryLabel: 'Promozionale',
+        badge: 'Best Seller Promozionale',
+        brand: "Sol's",
+        sku: 'SO-11380',
+        name: 'T-Shirt Regent 150g Cotone',
+        desc: 'La maglietta promozionale n.1 in Europa: 100% cotone semipettinato Ringspun con morbidezza al tatto e colletto con bordo in elastan.',
+        price: 8.50,
+        image: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=600&q=80',
+        colors: [
+          { name: 'Bianco Ottico', hex: '#ffffff' },
+          { name: 'Nero', hex: '#0f172a' },
+          { name: 'Blu Royal', hex: '#2563eb' },
+          { name: 'Rosso', hex: '#ef4444' }
+        ],
+        sizes: ['S', 'M', 'L', 'XL', '2XL', '3XL']
+      },
+      {
+        id: 'p7',
+        category: 'promo',
+        categoryLabel: 'Promozionale',
+        badge: 'Divise Staff & Ufficio',
+        brand: "Sol's",
+        sku: 'SO-00577',
+        name: 'Polo Pasadena 200g Bicolore',
+        desc: 'Polo piqué in cotone pettinato 200g con colletto e giromanica a contrasto. Rifinita con spacchetti laterali e bottoni tono su tono.',
+        price: 19.50,
+        image: 'https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=600&q=80',
+        colors: [
+          { name: 'Navy / Bianco', hex: '#1e3a8a' },
+          { name: 'Nero / Grigio', hex: '#0f172a' },
+          { name: 'Bianco / Navy', hex: '#f8fafc' },
+          { name: 'Rosso / Bianco', hex: '#b91c1c' }
+        ],
+        sizes: ['S', 'M', 'L', 'XL', '2XL', '3XL']
+      },
+      {
+        id: 'p8',
+        category: 'promo',
+        categoryLabel: 'Promozionale',
+        badge: 'Outdoor & Tecnica',
+        brand: 'Roly',
+        sku: 'RL-SS6437',
+        name: 'Giacca Softshell 3 Strati Antivento',
+        desc: 'Membrana tecnica traspirante (3000 MVP) e idrorepellente (8000 mm). Interno in micropile termico con zip invertite anti-vento.',
+        price: 49.00,
+        image: 'https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=600&q=80',
+        colors: [
+          { name: 'Nero', hex: '#0f172a' },
+          { name: 'Blu Navy', hex: '#1e3a8a' },
+          { name: 'Grigio Piombo', hex: '#475569' }
+        ],
+        sizes: ['S', 'M', 'L', 'XL', '2XL', '3XL']
+      },
+
+      // 3. GADGET & ARTICOLI TECH (4 articoli)
+      {
+        id: 'p9',
+        category: 'gadget',
+        categoryLabel: 'Gadget & Tech',
+        badge: 'Gadget Sostenibile',
+        brand: 'Makito',
+        sku: 'MK-6150',
+        name: 'Thermal Bottle 500ml Inox Sottovuoto',
+        desc: 'Acciaio inossidabile 304 a doppia parete termica sottovuoto. Mantiene bevande calde 12h e fredde 24h. Incisione laser 360° indelebile.',
+        price: 14.50,
+        image: 'https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=600&q=80',
+        colors: [
+          { name: 'Nero Satinato', hex: '#1e293b' },
+          { name: 'Argento Acciaio', hex: '#cbd5e1' },
+          { name: 'Bianco Opaco', hex: '#f1f5f9' },
+          { name: 'Verde Foresta', hex: '#065f46' }
+        ],
+        sizes: ['500 ml']
+      },
+      {
+        id: 'p10',
+        category: 'gadget',
+        categoryLabel: 'Gadget & Tech',
+        badge: 'Tech & Corporate',
+        brand: 'Makito',
+        sku: 'MK-7210',
+        name: 'Power Bank 10.000 mAh Alluminio',
+        desc: 'Batteria ai polimeri di litio ultracompatta da 10.000 mAh con ricarica rapida USB-C PD e display digitale di carica. Scocca metallica satinata.',
+        price: 22.00,
+        image: 'https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?auto=format&fit=crop&w=600&q=80',
+        colors: [
+          { name: 'Grigio Siderale', hex: '#475569' },
+          { name: 'Nero Grafite', hex: '#0f172a' },
+          { name: 'Argento Chiaro', hex: '#e2e8f0' }
+        ],
+        sizes: ['10.000 mAh']
+      },
+      {
+        id: 'p11',
+        category: 'gadget',
+        categoryLabel: 'Gadget & Tech',
+        badge: 'Eco & Eventi Fiere',
+        brand: 'Sipec',
+        sku: 'SP-BG402',
+        name: 'Shopper Canvas 280g Cotone Pesante',
+        desc: 'Borsa shopper in pesante tela canvas di cotone naturale 280g con manici lunghi rinforzati e soffietto alla base. Grande area di stampa.',
+        price: 6.20,
+        image: 'https://images.unsplash.com/photo-1598532163257-ae3c6b2524b6?auto=format&fit=crop&w=600&q=80',
+        colors: [
+          { name: 'Naturale Ecru', hex: '#fef3c7' },
+          { name: 'Nero', hex: '#0f172a' },
+          { name: 'Blu Navy', hex: '#1e3a8a' }
+        ],
+        sizes: ['38x42+10 cm']
+      },
+      {
+        id: 'p12',
+        category: 'gadget',
+        categoryLabel: 'Gadget & Tech',
+        badge: 'Regalo Aziendale',
+        brand: 'More Than Gifts',
+        sku: 'MTG-8820',
+        name: 'Set Penna Roller & Sfera Elegance',
+        desc: 'Elegante cofanetto regalo rigido con chiusura magnetica contenente una penna a sfera a scatto e una roller con inchiostro tedesco Dokumental.',
+        price: 18.00,
+        image: 'https://images.unsplash.com/photo-1569683795645-b62e50fbf103?auto=format&fit=crop&w=600&q=80',
+        colors: [
+          { name: 'Nero / Cromo Lucido', hex: '#0f172a' },
+          { name: 'Argento Satinato', hex: '#94a3b8' }
+        ],
+        sizes: ['Cofanetto Regalo']
+      },
+
+      // 4. HORECA & DIVISE CUCINA (4 articoli)
+      {
+        id: 'p13',
+        category: 'horeca',
+        categoryLabel: 'Horeca & Cucina',
+        badge: 'Horeca & Cucina',
+        brand: "Giblor's",
+        sku: 'GB-CHEF01',
+        name: "Giacca Chef Executive Airweb Giblor's",
+        desc: 'Design sartoriale italiano in cotone pima traspirante con inserto dorsale Airweb per la massima freschezza davanti ai fornelli.',
+        price: 52.00,
+        image: 'https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=600&q=80',
+        colors: [
+          { name: 'Bianco Ottico', hex: '#ffffff' },
+          { name: 'Nero Assoluto', hex: '#0f172a' }
+        ],
+        sizes: ['S', 'M', 'L', 'XL', '2XL', '3XL']
+      },
+      {
+        id: 'p14',
+        category: 'horeca',
+        categoryLabel: 'Horeca & Cucina',
+        badge: 'Bistrot & Sommelier',
+        brand: 'Siggi',
+        sku: 'SI-AP302',
+        name: 'Grembiule Pettorina Denim & Cuoio',
+        desc: 'Grembiule con pettorina in denim lavato pesante con laccetti regolabili e dettagli in vero cuoio amovibile per il lavaggio.',
+        price: 34.00,
+        image: 'https://images.unsplash.com/photo-1590736969955-71cc94801759?auto=format&fit=crop&w=600&q=80',
+        colors: [
+          { name: 'Blue Jeans Denim', hex: '#1e3a8a' },
+          { name: 'Grigio Antracite Wash', hex: '#334155' }
+        ],
+        sizes: ['Taglia Unica Regolabile']
+      },
+      {
+        id: 'p15',
+        category: 'horeca',
+        categoryLabel: 'Horeca & Cucina',
+        badge: 'Medicale & Benessere',
+        brand: "Giblor's",
+        sku: 'GB-MED45',
+        name: "Casacca Sanitaria & Wellness Giblor's",
+        desc: 'Tessuto bi-stretch elastico resistente ai lavaggi industriali a 60°C. Taglio anatomico con due tasche laterali e spacchetti traspiranti.',
+        price: 38.00,
+        image: 'https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=600&q=80',
+        colors: [
+          { name: 'Verde Salvia', hex: '#059669' },
+          { name: 'Azzurro Ospedale', hex: '#0284c7' },
+          { name: 'Bianco Medico', hex: '#f8fafc' },
+          { name: 'Lilla Benessere', hex: '#a855f7' }
+        ],
+        sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL']
+      },
+      {
+        id: 'p16',
+        category: 'horeca',
+        categoryLabel: 'Horeca & Cucina',
+        badge: 'Accessori Cucina',
+        brand: "Giblor's",
+        sku: 'GB-HAT10',
+        name: "Bandana Cappello Chef Traspirante",
+        desc: 'Copricapo professionale regolabile con lacci posteriori ed elastico comfort. Fascia interna tergisudore in morbida spugna.',
+        price: 12.00,
+        image: 'https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=600&q=80',
+        colors: [
+          { name: 'Nero', hex: '#0f172a' },
+          { name: 'Bianco', hex: '#ffffff' },
+          { name: 'Gessato Fino', hex: '#334155' }
+        ],
+        sizes: ['Taglia Unica Regolabile']
+      }
+    ];
+
+    let currentCategory = 'all';
+    let activeModalProduct = null;
+    let selectedColor = null;
+    let selectedSize = null;
     let quoteItems = [];
 
-    function setCategory(category) {
-      document.querySelectorAll('.cat-btn').forEach(btn => {
-        if (btn.dataset.category === category) {
-          btn.className = 'cat-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap bg-orange-600 text-white transition shadow-sm';
-        } else {
-          btn.className = 'cat-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200 transition';
-        }
+    // Inizializzazione
+    document.addEventListener('DOMContentLoaded', () => {
+      renderProducts();
+      lucide.createIcons();
+    });
+
+    // Renderizza griglia prodotti
+    function renderProducts() {
+      const grid = document.getElementById('productGrid');
+      const q = document.getElementById('searchInput') ? document.getElementById('searchInput').value.toLowerCase().trim() : '';
+
+      const filtered = PRODUCTS.filter(p => {
+        const matchCat = (currentCategory === 'all' || p.category === currentCategory);
+        const matchQuery = !q || p.name.toLowerCase().includes(q) || p.brand.toLowerCase().includes(q) || p.sku.toLowerCase().includes(q) || p.desc.toLowerCase().includes(q);
+        return matchCat && matchQuery;
       });
 
-      document.querySelectorAll('.product-card').forEach(card => {
-        if (category === 'all' || card.dataset.category === category) {
-          card.style.display = 'flex';
+      if (filtered.length === 0) {
+        grid.innerHTML = `
+          <div class="col-span-full py-16 text-center text-slate-400">
+            <i data-lucide="package-search" class="w-12 h-12 mx-auto text-slate-300 mb-3"></i>
+            <p class="text-base font-bold text-slate-700">Nessun prodotto trovato</p>
+            <p class="text-xs text-slate-400 mt-1">Prova a cambiare parola chiave o seleziona un'altra categoria.</p>
+            <button onclick="setCategory('all'); document.getElementById('searchInput').value='';" class="mt-4 px-4 py-2 bg-orange-50 text-orange-700 rounded-xl text-xs font-bold hover:bg-orange-600 hover:text-white transition">Mostra tutti i 16 articoli</button>
+          </div>
+        `;
+        lucide.createIcons();
+        return;
+      }
+
+      grid.innerHTML = filtered.map(p => `
+        <div class="product-card group bg-white rounded-2xl border border-slate-200/90 overflow-hidden hover:shadow-2xl hover:border-orange-500/30 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <!-- Immagine con badge e pulsante quick view overlay -->
+            <div class="relative h-60 bg-slate-100 overflow-hidden cursor-pointer" onclick="openProductModal('${p.id}')">
+              <span class="absolute top-3 left-3 bg-slate-950/80 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1 rounded-full border border-white/10 shadow-sm z-10">${p.brand}</span>
+              <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-md text-slate-800 text-[10px] font-extrabold px-2.5 py-1 rounded-full border border-slate-200 shadow-sm z-10 font-mono">${p.sku}</span>
+              <img src="${p.image}" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=600&q=80'" alt="${p.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              
+              <!-- Quick View Button Overlay -->
+              <div class="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                <span class="px-4 py-2 rounded-xl bg-white/95 text-slate-900 font-extrabold text-xs shadow-lg backdrop-blur flex items-center gap-1.5 transform translate-y-2 group-hover:translate-y-0 transition-transform">
+                  <i data-lucide="eye" class="w-3.5 h-3.5 text-orange-600"></i> Scheda & Varianti
+                </span>
+              </div>
+            </div>
+
+            <!-- Corpo Card -->
+            <div class="p-5">
+              <div class="flex items-center justify-between gap-2">
+                <span class="text-[11px] font-extrabold text-orange-600 uppercase tracking-wider">${p.badge}</span>
+                <span class="text-[11px] font-bold text-slate-400">da CHF ${p.price.toFixed(2)}</span>
+              </div>
+              
+              <h3 onclick="openProductModal('${p.id}')" class="font-extrabold text-slate-900 group-hover:text-orange-600 transition-colors mt-1 text-[16px] leading-snug cursor-pointer">${p.name}</h3>
+              <p class="text-xs text-slate-500 mt-1.5 leading-relaxed line-clamp-2">${p.desc}</p>
+              
+              <!-- Indicatori colori disponibili -->
+              <div class="flex items-center gap-1.5 mt-3 pt-3 border-t border-slate-100">
+                <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider mr-1">Tinte:</span>
+                ${p.colors.map(c => `
+                  <span class="w-3.5 h-3.5 rounded-full border border-slate-300 shadow-2xs" style="background-color: ${c.hex};" title="${c.name}"></span>
+                `).join('')}
+                <span class="text-[10px] text-slate-400 ml-auto">${p.sizes.length} Taglie</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Footer Card con 2 Azioni Fitts's Law -->
+          <div class="px-5 pb-5 pt-0 grid grid-cols-2 gap-2">
+            <button onclick="openProductModal('${p.id}')" class="w-full py-2 min-h-[40px] bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-xl text-xs font-bold transition flex items-center justify-center gap-1">
+              <i data-lucide="sliders-horizontal" class="w-3 h-3 text-slate-600"></i>
+              <span>Configura</span>
+            </button>
+            <button onclick="quickAddQuote('${p.id}')" class="w-full py-2 min-h-[40px] bg-orange-50 hover:bg-orange-600 text-orange-700 hover:text-white rounded-xl text-xs font-bold transition flex items-center justify-center gap-1 shadow-xs active:scale-95">
+              <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+              <span>+ Preventivo</span>
+            </button>
+          </div>
+        </div>
+      `).join('');
+
+      lucide.createIcons();
+    }
+
+    // Filtra per categoria
+    function setCategory(category) {
+      currentCategory = category;
+      document.querySelectorAll('.cat-btn').forEach(btn => {
+        if (btn.dataset.category === category) {
+          btn.className = 'cat-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap bg-orange-600 text-white transition shadow-sm flex items-center gap-2';
         } else {
-          card.style.display = 'none';
+          btn.className = 'cat-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200 transition flex items-center gap-2';
         }
       });
+      renderProducts();
     }
 
     function filterProducts() {
-      const q = document.getElementById('searchInput').value.toLowerCase();
-      document.querySelectorAll('.product-card').forEach(card => {
-        const name = card.dataset.name.toLowerCase();
-        if (name.includes(q)) {
-          card.style.display = 'flex';
+      renderProducts();
+    }
+
+    // Quick Add diretto dalla card (default 25 pz)
+    function quickAddQuote(productId) {
+      const p = PRODUCTS.find(x => x.id === productId);
+      if (!p) return;
+      quoteItems.push({
+        id: Date.now(),
+        productId: p.id,
+        name: p.name,
+        brand: p.brand,
+        cat: p.categoryLabel,
+        color: p.colors[0].name,
+        size: p.sizes[0],
+        technique: 'Ricamo Diretto HD',
+        unitPrice: p.price,
+        qty: 25
+      });
+      updateQuoteUI();
+      showToast(p.name);
+      animateBadge();
+    }
+
+    // Apertura Modale Scheda Prodotto E-Commerce
+    function openProductModal(productId) {
+      const p = PRODUCTS.find(x => x.id === productId);
+      if (!p) return;
+      activeModalProduct = p;
+
+      document.getElementById('modalBrand').innerText = p.brand;
+      document.getElementById('modalSku').innerText = 'SKU: ' + p.sku;
+      document.getElementById('modalCategory').innerText = p.categoryLabel;
+      document.getElementById('modalTitle').innerText = p.name;
+      document.getElementById('modalDesc').innerText = p.desc;
+      
+      const imgEl = document.getElementById('modalImg');
+      imgEl.src = p.image;
+      document.getElementById('modalThumb1').src = p.image;
+      document.getElementById('modalThumb2').src = p.image;
+
+      // Scaglioni
+      document.getElementById('priceTier1').innerText = 'CHF ' + p.price.toFixed(2);
+      document.getElementById('priceTier2').innerText = 'CHF ' + (p.price * 0.85).toFixed(2);
+      document.getElementById('priceTier3').innerText = 'CHF ' + (p.price * 0.75).toFixed(2);
+
+      // Colori
+      selectedColor = p.colors[0];
+      document.getElementById('selectedColorName').innerText = selectedColor.name;
+      const colorsContainer = document.getElementById('modalColors');
+      colorsContainer.innerHTML = p.colors.map((c, idx) => `
+        <button onclick="selectModalColor(${idx})" class="color-swatch w-7 h-7 rounded-full border-2 ${idx === 0 ? 'ring-2 ring-orange-500 ring-offset-2 border-white' : 'border-slate-300'} transition hover:scale-110 shadow-xs" style="background-color: ${c.hex};" title="${c.name}"></button>
+      `).join('');
+
+      // Taglie
+      selectedSize = p.sizes[0];
+      document.getElementById('selectedSizeName').innerText = selectedSize;
+      const sizesContainer = document.getElementById('modalSizes');
+      sizesContainer.innerHTML = p.sizes.map((s, idx) => `
+        <button onclick="selectModalSize('${s}', this)" class="size-chip px-3 py-1.5 rounded-lg border text-xs font-bold transition ${idx === 0 ? 'bg-orange-600 text-white border-orange-600 shadow-xs' : 'bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100'}">${s}</button>
+      `).join('');
+
+      document.getElementById('modalQty').value = 50;
+      updateModalPrice();
+
+      document.getElementById('productModal').classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    function closeProductModal() {
+      document.getElementById('productModal').classList.add('hidden');
+      activeModalProduct = null;
+    }
+
+    function selectModalColor(idx) {
+      if (!activeModalProduct) return;
+      selectedColor = activeModalProduct.colors[idx];
+      document.getElementById('selectedColorName').innerText = selectedColor.name;
+      
+      const swatches = document.querySelectorAll('.color-swatch');
+      swatches.forEach((el, i) => {
+        if (i === idx) {
+          el.className = 'color-swatch w-7 h-7 rounded-full border-2 ring-2 ring-orange-500 ring-offset-2 border-white transition hover:scale-110 shadow-xs';
         } else {
-          card.style.display = 'none';
+          el.className = 'color-swatch w-7 h-7 rounded-full border-2 border-slate-300 transition hover:scale-110 shadow-xs';
         }
       });
     }
 
+    function selectModalSize(size, el) {
+      selectedSize = size;
+      document.getElementById('selectedSizeName').innerText = size;
+      document.querySelectorAll('.size-chip').forEach(btn => {
+        btn.className = 'size-chip px-3 py-1.5 rounded-lg border text-xs font-bold transition bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100';
+      });
+      el.className = 'size-chip px-3 py-1.5 rounded-lg border text-xs font-bold transition bg-orange-600 text-white border-orange-600 shadow-xs';
+    }
+
+    function adjustModalQty(delta) {
+      const input = document.getElementById('modalQty');
+      let val = parseInt(input.value) || 25;
+      val = Math.max(5, val + delta);
+      input.value = val;
+      updateModalPrice();
+    }
+
+    function updateModalPrice() {
+      if (!activeModalProduct) return;
+      const qty = parseInt(document.getElementById('modalQty').value) || 25;
+      
+      // Calcolo scaglione sconto
+      let unitPrice = activeModalProduct.price;
+      if (qty >= 100) {
+        unitPrice *= 0.75; // -25%
+      } else if (qty >= 50) {
+        unitPrice *= 0.85; // -15%
+      }
+
+      // Surcharge tecnica
+      const tech = document.getElementById('modalTechnique').value;
+      let techFee = 0;
+      if (tech === 'ricamo') techFee = 3.50;
+      else if (tech === 'serigrafia') techFee = 2.00;
+      else if (tech === 'dtf') techFee = 4.00;
+      else if (tech === 'laser') techFee = 2.50;
+
+      const finalUnit = unitPrice + techFee;
+      const total = finalUnit * qty;
+      document.getElementById('modalTotalPrice').innerText = 'CHF ' + total.toLocaleString('de-CH', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    }
+
+    // Aggiunge configurazione personalizzata al preventivo
+    function addModalProductToQuote() {
+      if (!activeModalProduct) return;
+      const qty = parseInt(document.getElementById('modalQty').value) || 25;
+      const techSelect = document.getElementById('modalTechnique');
+      const techName = techSelect.options[techSelect.selectedIndex].text.split('(')[0].trim();
+
+      let unitPrice = activeModalProduct.price;
+      if (qty >= 100) unitPrice *= 0.75;
+      else if (qty >= 50) unitPrice *= 0.85;
+
+      quoteItems.push({
+        id: Date.now(),
+        productId: activeModalProduct.id,
+        name: activeModalProduct.name,
+        brand: activeModalProduct.brand,
+        cat: activeModalProduct.categoryLabel,
+        color: selectedColor ? selectedColor.name : 'Nero',
+        size: selectedSize || 'M',
+        technique: techName,
+        unitPrice: unitPrice,
+        qty: qty
+      });
+
+      updateQuoteUI();
+      closeProductModal();
+      showToast(activeModalProduct.name + ' (' + qty + ' pz)');
+      animateBadge();
+    }
+
+    // Drawer Preventivo & Calcolo Totale
     function toggleQuoteDrawer() {
       const drawer = document.getElementById('quoteDrawer');
       drawer.classList.toggle('hidden');
     }
 
-    function addToQuote(name, brand, cat) {
-      quoteItems.push({ id: Date.now(), name, brand, cat, qty: 25 });
+    function removeFromQuote(id) {
+      quoteItems = quoteItems.filter(item => item.id !== id);
       updateQuoteUI();
-      showToast(name);
-      animateBadge();
     }
 
+    function updateQuoteUI() {
+      document.getElementById('quoteBadge').innerText = quoteItems.length;
+      const list = document.getElementById('quoteItemsList');
+      
+      if (quoteItems.length === 0) {
+        list.innerHTML = `
+          <div class="text-center py-16 text-slate-400">
+            <i data-lucide="shopping-bag" class="w-12 h-12 mx-auto text-slate-300 mb-2"></i>
+            <p class="text-sm font-bold text-slate-700">Nessun articolo nel preventivo</p>
+            <p class="text-xs text-slate-400 mt-1 max-w-[220px] mx-auto">Sfoglia i 16 prodotti del catalogo e aggiungi i capi desiderati per la tua azienda.</p>
+          </div>
+        `;
+      } else {
+        let totalSum = 0;
+        list.innerHTML = quoteItems.map(item => {
+          const rowTotal = item.unitPrice * item.qty;
+          totalSum += rowTotal;
+          return `
+            <div class="p-4 bg-white rounded-2xl border border-slate-200/90 shadow-xs space-y-2">
+              <div class="flex items-start justify-between gap-2">
+                <div>
+                  <span class="text-[10px] font-extrabold text-orange-600 uppercase tracking-wide">${item.brand} • ${item.cat}</span>
+                  <p class="text-xs font-black text-slate-900 leading-snug">${item.name}</p>
+                </div>
+                <button onclick="removeFromQuote(${item.id})" class="text-slate-400 hover:text-red-600 transition p-1 rounded-lg hover:bg-red-50">
+                  <i data-lucide="trash-2" class="w-4 h-4"></i>
+                </button>
+              </div>
+
+              <!-- Dettagli varianti scelte -->
+              <div class="flex flex-wrap items-center gap-1.5 text-[10px]">
+                <span class="px-2 py-0.5 rounded-md bg-slate-100 text-slate-700 font-semibold">Colore: <strong>${item.color}</strong></span>
+                <span class="px-2 py-0.5 rounded-md bg-slate-100 text-slate-700 font-semibold">Taglia: <strong>${item.size}</strong></span>
+                <span class="px-2 py-0.5 rounded-md bg-orange-100/70 text-orange-800 font-semibold">Lavorazione: <strong>${item.technique}</strong></span>
+              </div>
+
+              <div class="pt-2 border-t border-slate-100 flex items-center justify-between">
+                <div class="flex items-center gap-1.5">
+                  <span class="text-[11px] text-slate-500 font-medium">Quantità:</span>
+                  <input type="number" value="${item.qty}" min="5" step="5" onchange="updateItemQty(${item.id}, this.value)" class="w-14 px-1.5 py-0.5 border border-slate-200 rounded-md text-xs text-center font-bold text-slate-800" />
+                </div>
+                <div class="text-right">
+                  <span class="text-xs font-black text-slate-900">CHF ${rowTotal.toLocaleString('de-CH', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
+                </div>
+              </div>
+            </div>
+          `;
+        }).join('') + `
+          <!-- BOX RIEPILOGO TOTALE PREVENTIVO -->
+          <div class="p-4 rounded-2xl bg-orange-50/80 border border-orange-200 mt-4">
+            <div class="flex items-center justify-between text-xs text-orange-950 font-bold mb-1">
+              <span>Totale Indicativo Preventivo:</span>
+              <span class="text-base font-black text-orange-700">CHF ${totalSum.toLocaleString('de-CH', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
+            </div>
+            <p class="text-[10px] text-orange-800 leading-tight">Prezzo stimato escl. IVA. La quotazione definitiva con bozza grafica ti verrà inviata entro 24h da Emanuele.</p>
+          </div>
+        `;
+      }
+      lucide.createIcons();
+    }
+
+    function updateItemQty(id, newQty) {
+      const item = quoteItems.find(x => x.id === id);
+      if (item) {
+        item.qty = Math.max(5, parseInt(newQty) || 5);
+        updateQuoteUI();
+      }
+    }
+
+    // Toast Notification
     function showToast(name) {
       const toast = document.getElementById('toastNotification');
       document.getElementById('toastText').innerText = name;
@@ -784,42 +1401,6 @@
       setTimeout(() => {
         badge.classList.remove('scale-125', 'bg-emerald-500');
       }, 400);
-    }
-
-    function removeFromQuote(id) {
-      quoteItems = quoteItems.filter(item => item.id !== id);
-      updateQuoteUI();
-    }
-
-    function updateQuoteUI() {
-      document.getElementById('quoteBadge').innerText = quoteItems.length;
-      const list = document.getElementById('quoteItemsList');
-      if (quoteItems.length === 0) {
-        list.innerHTML = `
-          <div class="text-center py-12 text-slate-400">
-            <i data-lucide="shopping-bag" class="w-10 h-10 mx-auto text-slate-300 mb-2"></i>
-            <p class="text-xs">Nessun articolo aggiunto al preventivo.</p>
-            <p class="text-[11px] text-slate-400 mt-1">Clicca su "+ Preventivo" sui capi del catalogo.</p>
-          </div>
-        `;
-      } else {
-        list.innerHTML = quoteItems.map(item => `
-          <div class="p-3.5 bg-white rounded-2xl border border-slate-200/90 shadow-xs flex items-center justify-between gap-3">
-            <div>
-              <span class="text-[10px] font-extrabold text-orange-600 uppercase tracking-wide">${item.brand} • ${item.cat}</span>
-              <p class="text-xs font-extrabold text-slate-900">${item.name}</p>
-              <div class="flex items-center gap-2 mt-1.5">
-                <span class="text-[11px] text-slate-500">Q.tà stimata:</span>
-                <input type="number" value="${item.qty}" min="5" step="5" class="w-16 px-2 py-0.5 border border-slate-200 rounded-lg text-xs text-center font-bold text-slate-800" />
-              </div>
-            </div>
-            <button onclick="removeFromQuote(${item.id})" class="text-slate-400 hover:text-red-600 transition p-1.5 rounded-lg hover:bg-red-50">
-              <i data-lucide="trash-2" class="w-4 h-4"></i>
-            </button>
-          </div>
-        `).join('');
-      }
-      lucide.createIcons();
     }
 
     function handleFormSubmit(e) {
