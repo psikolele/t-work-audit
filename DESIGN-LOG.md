@@ -19,3 +19,6 @@
 ## 📝 Registro Decisioni Architetturali (ADR)
 - **ADR-001 (21/09/2026): Scelta di rifacimento completo rispetto a patch Webflow.**
   - *Motivazione:* Modificare l'attuale template Webflow lascerebbe in piedi il costo ricorrente, l'impossibilità di gestire un vero configuratore preventivi e la complessità di un catalogo prodotti serio. Il ROI per il cliente si ottiene solo con una piattaforma dedicata Kraken.
+- **ADR-002 (21/09/2026): Stack Tecnologico — WordPress + WooCommerce B2B via REST API & Application Passwords.**
+  - *Decisione:* Utilizzare WordPress + WooCommerce configurato in modalità B2B Catalog & Quote, gestito programmaticamente dall'agente AI tramite Application Passwords e WooCommerce REST API (`/wp-json/wc/v3/`).
+  - *Motivazione:* Allineamento con il workflow già collaudato con successo dall'utente. Permette l'automazione totale del caricamento articoli, categorie, attributi e varianti via script REST API, offrendo al contempo ad Emanuele Frigerio un pannello di gestione ordini/lead standard e familiare.
