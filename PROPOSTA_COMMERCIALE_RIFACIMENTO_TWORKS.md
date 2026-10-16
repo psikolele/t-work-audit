@@ -87,18 +87,18 @@ La tempistica parte dal **completamento dei prerequisiti (Fase 0)**, non dalla f
 
 | Fase | Descrizione | Durata |
 |---|---|---|
-| **Fase 0: Prerequisiti & Accessi** | Completamento del trasferimento del contratto Hostpoint a T-Work & Gadget Sagl, accesso alla gestione DNS di `t-workgadget.ch`, recupero dei 14 cataloghi originali (PDF o file dei fornitori) dall'account Google. | 1 settimana *(dipende dai tempi di Hostpoint e Google)* |
+| **Fase 0: Prerequisiti & Accessi** | Completamento del trasferimento del contratto Hostpoint a T-Work & Gadget Sagl, accesso alla gestione DNS di `t-workgadget.ch`, recupero dei cataloghi dei marchi scelti (file dei fornitori o PDF) dall'account Google. | 1 settimana *(dipende dai tempi di Hostpoint e Google)* |
 | **Fase 1: Architettura & Visual Concept** | Albero di navigazione, categorie, wireframe e grafica. Include due giri di revisione e l'approvazione scritta di Emanuele. | 1–2 settimane |
 | **Fase 2: Setup Piattaforma & Frontend** | Installazione WordPress + WooCommerce (modalità catalogo B2B) su Hostpoint, sviluppo interfaccia responsive, configuratore preventivi con upload logo. | 2 settimane |
-| **Fase 3: Migrazione dei 14 Cataloghi** | Estrazione articoli, foto, varianti e taglie dai cataloghi PDF e caricamento in lotti: **Lotto 1** (brand principali: Portwest, Sol's, Giblor's, Clique) prima del go-live; **Lotti 2–3** (marchi restanti) dopo il go-live. Parte in parallelo alla Fase 2. | Lotto 1: 3–4 settimane · Lotti 2–3: 3–4 settimane |
+| **Fase 3: Migrazione dei Cataloghi** | Caricamento di articoli, foto, varianti e taglie per gli 8–10 marchi scelti. Makito e midocean dal feed dati del fornitore; gli altri dai file ricevuti o, in mancanza, dai PDF. Parte in parallelo alla Fase 2. | 3–4 settimane |
 | **Fase 4: SEO, Compliance & Integrazioni** | Schema.org `LocalBusiness`, SEO territoriale, tracciamento conversioni, informativa e cookie conformi nLPD, notifiche preventivi. | 1 settimana |
 | **Fase 5: Collaudo & Messa Online** | Collaudo con Emanuele, switch DNS su Hostpoint, redirect dalle vecchie URL, verifica indicizzazione. | 1 settimana |
 
-**Durata complessiva realistica: 8–10 settimane** dal completamento della Fase 0.
-- **Go-live** con Lotto 1 del catalogo: circa **settimana 7**.
-- **Catalogo completo (14 marchi)**: entro **settimana 10**. Fino ad allora i cataloghi non ancora migrati restano scaricabili come PDF ottimizzati ospitati sul dominio T-Work, non più su Google Drive.
+**Durata complessiva realistica: 6–8 settimane** dal completamento della Fase 0.
+- **Go-live** con tutti i marchi che hanno file disponibili: circa **settimana 7**.
+- I marchi senza file dal fornitore slittano a un lotto successivo, prezzato a parte (vedi sezione 6).
 
-> **Perché la migrazione dei cataloghi non può aspettare:** oggi tutti i cataloghi dipendono da un singolo account Google. Se l'account viene sospeso o chiuso, i 14 link del sito smettono di funzionare dall'oggi al domani. Spostarli sul dominio T-Work elimina questo rischio.
+> **Perché la migrazione dei cataloghi non può aspettare:** oggi tutti i cataloghi dipendono da un singolo account Google. Se l'account viene sospeso o chiuso, i link dei cataloghi nel sito smettono di funzionare dall'oggi al domani. Spostarli sul dominio T-Work elimina questo rischio.
 
 **Cosa serve da T-Work per rispettare i tempi:** accessi Hostpoint e DNS, file originali dei cataloghi, logo in formato vettoriale, testi aziendali, feedback sulle bozze entro 5 giorni lavorativi. Ritardi su questi punti spostano la consegna dello stesso numero di giorni.
 
@@ -113,61 +113,55 @@ La tempistica parte dal **completamento dei prerequisiti (Fase 0)**, non dalla f
 
 ## 6. Investimento
 
-*Importi in CHF, IVA [da definire]. Le cifre tra parentesi quadre sono da confermare prima dell'invio.*
+*Importi in CHF, IVA [da definire]. Prezzo fisso per il perimetro descritto qui sotto.*
 
-| | **Essenziale** | **Professionale** *(consigliato)* | **Completo** |
-|---|:---:|:---:|:---:|
-| Design su misura e sito responsive (Modulo A) | ✓ | ✓ | ✓ |
-| Setup WordPress + WooCommerce B2B su Hostpoint | ✓ | ✓ | ✓ |
-| Catalogo interattivo: marchi migrati | 4 principali | tutti i 14 | tutti i 14 |
-| Articoli caricati per marchio (selezione con Emanuele) | fino a [N] | fino a [N] | fino a [N] |
-| Cataloghi non migrati come PDF ottimizzati sul dominio | ✓ (10 marchi) | — | — |
-| Richiesta preventivo con upload logo | modulo singolo | Quote Builder multi-articolo | Quote Builder multi-articolo |
-| Notifica preventivi | email | email | email + WhatsApp automatico |
-| SEO tecnica, Schema.org, conformità nLPD (Modulo D) | base | completa + SEO territoriale | completa + SEO territoriale |
-| Ottimizzazione profilo Google Business | — | — | ✓ |
-| Formazione all'uso del pannello | 1 h | 2 h | 2 h |
-| Redirect dalle vecchie URL | ✓ | ✓ | ✓ |
-| **Investimento una tantum** | **CHF [_____]** | **CHF [_____]** | **CHF [_____]** |
+**Pacchetto unico, sito e catalogo T-Work: CHF 1'700** una tantum.
 
-**Opzioni aggiuntive**
-- Blocco di 50 articoli oltre la soglia del pacchetto: CHF [_____]
-- Seconda lingua (tedesco) per il mercato svizzero tedesco: CHF [_____]
-- Ore extra per lavori fuori scopo: CHF [_____]/ora
+**Incluso:**
+- Design su misura e sito responsive (Modulo A)
+- Setup WordPress + WooCommerce in modalità catalogo B2B e preventivo, su Hostpoint
+- Catalogo interattivo con **8–10 marchi**, scelti da Emanuele. Makito e midocean sono i primi candidati perché hanno un feed dati
+- Richiesta preventivo con upload logo e lista multi-articolo (Modulo C, versione base)
+- SEO tecnica, Schema.org `LocalBusiness`, conformità nLPD (Modulo D, versione base)
+- Redirect dalle vecchie URL
+- Un'ora di formazione sul pannello
+- Primo anno di manutenzione (sezione 7)
 
-**Costi di terzi (non inclusi, intestati e pagati direttamente da T-Work)**
-- Hosting e dominio `.ch` su Hostpoint, secondo il contratto in essere trasferito a T-Work & Gadget Sagl.
-- Eventuali licenze di plugin premium (es. gestione richieste preventivo), indicate prima dell'acquisto.
-- Pacchetto Completo: eventuali costi del canale WhatsApp Business.
+**Esclusioni, non incluse nel prezzo:**
+- Marchi senza file o feed dal fornitore: slittano a un lotto successivo, prezzato a parte.
+- Cataloghi PDF scansionati o non leggibili: inseriti a ore, solo previo accordo.
+- Foto di prodotto non fornite da T-Work o dal fornitore.
+- Modifiche oltre il perimetro: preventivate prima di essere eseguite.
+- Hosting e dominio su Hostpoint: costi a carico di T-Work [da confermare].
+- Ore extra: CHF [70]/ora.
 
-Dopo il go-live l'abbonamento Webflow attuale può essere disdetto.
+**Pagamento:** 40% alla firma · 30% all'approvazione del visual concept · 30% alla messa online.
 
 ---
 
 ## 7. Manutenzione e Assistenza
 
-| | **Base** | **Plus** |
-|---|:---:|:---:|
-| Aggiornamenti WordPress, WooCommerce e plugin | ✓ | ✓ |
-| Backup automatici e ripristino | settimanale | giornaliero |
-| Monitoraggio sicurezza e disponibilità del sito | ✓ | ✓ |
-| Aggiornamento catalogo (nuovi articoli, cataloghi stagionali) | — | fino a [n] ore/mese |
-| Report mensile su richieste preventivo e posizionamento | — | ✓ |
-| Tempo di risposta | 2 giorni lavorativi | 1 giorno lavorativo |
-| **Canone** | **CHF [___]/mese** | **CHF [___]/mese** |
+- **Primo anno:** incluso nel prezzo.
+- **Dal secondo anno:** CHF 300 all'anno, fatturati in anticipo.
 
-- Il canone decorre dal mese successivo al go-live. Durata minima [12] mesi, poi rinnovo tacito annuale con disdetta scritta [3] mesi prima della scadenza.
-- Fatturazione [trimestrale anticipata]. Le ore incluse nel Plus non sono cumulabili da un mese all'altro.
-- I primi 30 giorni dopo il go-live sono coperti da garanzia: i difetti di funzionamento vengono corretti senza costi, anche senza canone attivo.
+**Incluso nel canone annuale:**
+- Aggiornamenti WordPress, WooCommerce e plugin
+- Backup automatici
+- Monitoraggio di sicurezza e disponibilità
+- Assistenza via email, con risposta entro 2 giorni lavorativi
+
+**Non incluso, a ore:** nuovi articoli o marchi, modifiche di contenuto e grafica.
+
+- Il canone si rinnova tacitamente ogni anno, con disdetta scritta tre mesi prima della scadenza.
+- I primi 30 giorni dopo il go-live sono in garanzia: i difetti di funzionamento vengono corretti senza costi.
 
 ---
 
 ## 8. Condizioni Generali
 
-- **Pagamento del progetto:** 40% alla firma · 30% all'approvazione del visual concept (fine Fase 1) · 30% alla messa online. Fatture in CHF, pagabili a 30 giorni.
 - **Proprietà:** al saldo, codice, contenuti, dominio e accessi amministratore appartengono interamente a T-Work & Gadget Sagl.
 - **Contenuti:** testi, loghi e cataloghi sono forniti da T-Work, che ne garantisce i diritti d'uso. Servizi fotografici e copywriting non sono inclusi salvo accordo separato.
-- **Modifiche di perimetro:** richieste oltre quanto descritto in questa proposta vengono preventivate a parte prima di essere eseguite.
+- **Modifiche di perimetro:** richieste oltre quanto descritto in questa proposta vengono preventivate prima di essere eseguite.
 - **Revisioni:** inclusi due giri di revisione sulla grafica e uno sul sito completo prima del go-live.
 - **Validità:** questa offerta è valida 30 giorni dalla data di invio.
 - **Diritto applicabile e foro:** [diritto svizzero, foro di _____].
@@ -178,9 +172,7 @@ Dopo il go-live l'abbonamento Webflow attuale può essere disdetto.
 
 Con la firma, T-Work & Gadget Sagl conferma l'incarico a Kraken Web Development alle condizioni sopra descritte.
 
-**Pacchetto scelto:** ☐ Essenziale ☐ Professionale ☐ Completo  
-**Manutenzione:** ☐ Base ☐ Plus ☐ Nessuna  
-**Opzioni aggiuntive:** ______________________________________
+**Marchi scelti (8–10):** ______________________________________
 
 | Per T-Work & Gadget Sagl | Per Kraken Web Development |
 |---|---|
