@@ -121,6 +121,7 @@ La tempistica parte dal **completamento dei prerequisiti (Fase 0)**, non dalla f
 - Design su misura e sito responsive (Modulo A)
 - Setup WordPress + WooCommerce in modalità catalogo B2B e preventivo, su Hostpoint
 - Catalogo interattivo con **8–10 marchi**, scelti da Emanuele. Makito e midocean sono i primi candidati perché hanno un feed dati
+- Circa **15–20 modelli per marchio** (proposta, totale 120–200 articoli), da confermare con Emanuele
 - Richiesta preventivo con upload logo e lista multi-articolo (Modulo C, versione base)
 - SEO tecnica, Schema.org `LocalBusiness`, conformità nLPD (Modulo D, versione base)
 - Redirect dalle vecchie URL
