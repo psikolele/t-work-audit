@@ -20,7 +20,7 @@ Dossier esecutivo, analisi tecnica e prototipo interattivo per il rilancio digit
 ## 🧱 Stack del Sito Definitivo
 - **Piattaforma:** WordPress + WooCommerce in modalità B2B Catalogo & Preventivo (ADR-002 in `DESIGN-LOG.md`)
 - **Automazione catalogo:** WooCommerce REST API (`/wp-json/wc/v3/`) con Application Passwords
-- **Dominio & hosting:** `t-workgadget.ch` su Hostpoint (trasferimento contratto al cliente in corso)
+- **Dominio & hosting:** `t-workgadget.ch` già su Hostpoint (resta il passaggio del contratto all'account di Emanuele)
 
 ## 🛠️ Stack Tecnologico Prototipo
 > Il prototipo è una demo statica di interfaccia; il sito definitivo sarà su WordPress + WooCommerce.

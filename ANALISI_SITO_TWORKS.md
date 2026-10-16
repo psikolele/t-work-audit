@@ -110,8 +110,8 @@ Per trasformare il sito web da costo passivo a **generatore automatico di preven
   - Caricamento e aggiornamento degli articoli automatizzabili via WooCommerce REST API (`/wp-json/wc/v3/`) con Application Passwords, senza inserimento manuale scheda per scheda.
   - Pannello di amministrazione WordPress standard per Emanuele: richieste, prodotti e testi gestibili in autonomia.
 - **Hosting e dominio:**
-  - Il dominio `t-workgadget.ch` è gestito su **Hostpoint** (provider svizzero); il contratto è in fase di trasferimento all'intestazione di T-Work & Gadget / Emanuele Frigerio, da completare prima della messa online.
-  - Hosting WordPress in Svizzera (sullo stesso contratto Hostpoint, se il piano lo consente, oppure su hosting svizzero equivalente) con SSL e dati conformi alla **nLPD** (Legge federale sulla protezione dei dati).
+  - Hosting e dominio `t-workgadget.ch` sono già su **Hostpoint** (provider svizzero): non serve un nuovo provider. Resta da completare il passaggio del contratto all'account di Emanuele Frigerio (nuova email), da chiudere prima della messa online.
+  - WordPress sarà installato sull'hosting Hostpoint esistente (da verificare che il piano supporti WooCommerce e PHP aggiornato), con SSL e dati in Svizzera conformi alla **nLPD** (Legge federale sulla protezione dei dati). Fino al passaggio, sviluppo e collaudo avvengono in staging.
 - **Prestazioni:** tema leggero, immagini ottimizzate e caching lato server, con obiettivo Core Web Vitals "buoni" e punteggio 90+ su Google PageSpeed mobile.
 - **Costi e proprietà:** WordPress e WooCommerce sono open source; restano il canone di hosting e le eventuali licenze di plugin, ma nessun abbonamento Webflow e nessun vincolo a una piattaforma chiusa: dati e contenuti esportabili in qualsiasi momento.
 
@@ -146,4 +146,4 @@ Per trasformare il sito web da costo passivo a **generatore automatico di preven
 | **Richiesta Preventivo** | `mailto:` e Form GET con falle | Carrello preventivi B2B con upload logo |
 | **Testate & UI** | Icone finte e refusi nei titoli | UI/UX professionale ad alta conversione |
 | **Dati Strutturati** | Assenti (0 schema JSON-LD) | `LocalBusiness` + `Product` completi |
-| **Piattaforma & Hosting** | Dipendente da Webflow ($$$) | WordPress + WooCommerce open source su hosting svizzero (Hostpoint) |
+| **Piattaforma & Hosting** | Dipendente da Webflow ($$$) | WordPress + WooCommerce open source sull'hosting Hostpoint già in uso |

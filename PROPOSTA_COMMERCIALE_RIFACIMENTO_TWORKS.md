@@ -93,13 +93,13 @@ Il nuovo portale sarà realizzato su **WordPress + WooCommerce** configurato com
 | **Fase 4: Collaudo & Messa Online** | Switch del dominio `t-workgadget.ch`, migrazione DNS e collaudo finale. | 3-5 giorni |
 
 **Prerequisiti lato T-Work per la messa online:**
-- Completare il trasferimento del contratto Hostpoint (dominio `t-workgadget.ch`) all'intestazione di T-Work & Gadget / Emanuele Frigerio, così da poter gestire DNS e hosting.
+- Completare il passaggio del contratto Hostpoint (hosting e dominio `t-workgadget.ch`, già in uso) all'account di Emanuele Frigerio, così da poter gestire DNS e hosting. Nessun cambio di provider.
 - Indicare una casella email sul dominio aziendale (es. `info@t-workgadget.ch`) per l'account amministratore e le notifiche dei preventivi, invece di un account personale.
 
 ---
 
 ## 5. Perché Scegliere Kraken
 
-- **Piattaforma open source, nessun vincolo a Webflow:** WordPress + WooCommerce è lo standard più diffuso al mondo; restano solo il canone di hosting svizzero ed eventuali licenze di plugin, senza abbonamenti a piattaforme chiuse.
+- **Piattaforma open source, nessun vincolo a Webflow:** WordPress + WooCommerce è lo standard più diffuso al mondo; resta solo il canone dell'hosting svizzero già in uso (Hostpoint) ed eventuali licenze di plugin, senza abbonamenti a piattaforme chiuse.
 - **Piena proprietà dei contenuti e dei dati:** sito, catalogo e richieste appartengono al 100% a T-Work & Gadget Sagl e sono esportabili in qualsiasi momento.
 - **Supporto locale e tempestività:** un team che comprende il mercato ticinese e svizzero e risponde rapidamente.
