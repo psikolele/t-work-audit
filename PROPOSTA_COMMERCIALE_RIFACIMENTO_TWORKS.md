@@ -129,7 +129,7 @@ La tempistica parte dal **completamento dei prerequisiti (Fase 0)**, non dalla f
 - Primo anno di manutenzione (sezione 7)
 
 **Esclusioni, non incluse nel prezzo:**
-- Marchi senza file o feed dal fornitore: slittano a un lotto successivo, prezzato a parte.
+- Marchi senza file o feed dal fornitore: slittano a un lotto successivo, prezzato a parte. Se un fornitore rilascia solo file PDF e non un feed, i costi possono variare: l'inserimento manuale viene quantificato a ore e concordato prima di procedere.
 - Cataloghi PDF scansionati o non leggibili: inseriti a ore, solo previo accordo.
 - Foto di prodotto non fornite da T-Work o dal fornitore.
 - Modifiche oltre il perimetro: preventivate prima di essere eseguite.
