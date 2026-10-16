@@ -105,10 +105,15 @@ Nel codice sorgente emergono chiaramente le classi originali del template Webflo
 Per trasformare il sito web da costo passivo a **generatore automatico di preventivi e clienti B2B**, la strategia consigliata da Kraken prevede:
 
 ### 4.1 Architettura e Tecnologia
-- **Sito Web ad alte prestazioni (Next.js / Astro o WordPress Headless ultra-veloce):**
-  - Hosting moderno ad alte prestazioni con SSL svizzero/europeo conforme alla **nLPD** (Legge federale sulla protezione dei dati).
-  - Codice pulito, accessibile e conforme ai Core Web Vitals (punteggio 95+ su Google PageSpeed).
-  - Nessun canone gonfiato Webflow: controllo totale dei dati e scalabilità.
+- **Piattaforma: WordPress + WooCommerce in modalità B2B "Catalogo & Preventivo"** (decisione ADR-002 del Design Log):
+  - WooCommerce gestisce catalogo, categorie, attributi e varianti (colore, taglia, tecnica di personalizzazione); il checkout con pagamento è disattivato in Fase 1 e sostituito dalla richiesta di preventivo.
+  - Caricamento e aggiornamento degli articoli automatizzabili via WooCommerce REST API (`/wp-json/wc/v3/`) con Application Passwords, senza inserimento manuale scheda per scheda.
+  - Pannello di amministrazione WordPress standard per Emanuele: richieste, prodotti e testi gestibili in autonomia.
+- **Hosting e dominio:**
+  - Il dominio `t-workgadget.ch` è gestito su **Hostpoint** (provider svizzero); il contratto è in fase di trasferimento all'intestazione di T-Work & Gadget / Emanuele Frigerio, da completare prima della messa online.
+  - Hosting WordPress in Svizzera (sullo stesso contratto Hostpoint, se il piano lo consente, oppure su hosting svizzero equivalente) con SSL e dati conformi alla **nLPD** (Legge federale sulla protezione dei dati).
+- **Prestazioni:** tema leggero, immagini ottimizzate e caching lato server, con obiettivo Core Web Vitals "buoni" e punteggio 90+ su Google PageSpeed mobile.
+- **Costi e proprietà:** WordPress e WooCommerce sono open source; restano il canone di hosting e le eventuali licenze di plugin, ma nessun abbonamento Webflow e nessun vincolo a una piattaforma chiusa: dati e contenuti esportabili in qualsiasi momento.
 
 ### 4.2 Catalogo Prodotti B2B Interattivo
 - **Addio ai PDF su Google Drive:**
@@ -141,4 +146,4 @@ Per trasformare il sito web da costo passivo a **generatore automatico di preven
 | **Richiesta Preventivo** | `mailto:` e Form GET con falle | Carrello preventivi B2B con upload logo |
 | **Testate & UI** | Icone finte e refusi nei titoli | UI/UX professionale ad alta conversione |
 | **Dati Strutturati** | Assenti (0 schema JSON-LD) | `LocalBusiness` + `Product` completi |
-| **Prestazioni & Hosting** | Dipendente da Webflow ($$$) | Stack proprietario, veloce e scalabile |
+| **Piattaforma & Hosting** | Dipendente da Webflow ($$$) | WordPress + WooCommerce open source su hosting svizzero (Hostpoint) |

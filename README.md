@@ -17,7 +17,14 @@ Dossier esecutivo, analisi tecnica e prototipo interattivo per il rilancio digit
 
 ---
 
+## 🧱 Stack del Sito Definitivo
+- **Piattaforma:** WordPress + WooCommerce in modalità B2B Catalogo & Preventivo (ADR-002 in `DESIGN-LOG.md`)
+- **Automazione catalogo:** WooCommerce REST API (`/wp-json/wc/v3/`) con Application Passwords
+- **Dominio & hosting:** `t-workgadget.ch` su Hostpoint (trasferimento contratto al cliente in corso)
+
 ## 🛠️ Stack Tecnologico Prototipo
+> Il prototipo è una demo statica di interfaccia; il sito definitivo sarà su WordPress + WooCommerce.
+
 - **Frontend:** HTML5, Tailwind CSS (Mobile-First responsive), Lucide Icons
 - **SEO & Microdati:** Schema.org `LocalBusiness` per Chiasso/Ticino, OpenGraph `it_CH`
 - **Features B2B:** Carrello quotazione in slide-over, simulazione upload logo aziendale, ricerca live articoli
