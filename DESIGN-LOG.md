@@ -13,6 +13,7 @@
 ## 🧭 Budgeted Resource & Vincoli
 - **Budgeted Resource Principale:** Tasso di conversione B2B (lead caldi da preventivatore con logo aziendale) e velocità/semplicità di consultazione mobile.
 - **Vincoli Rigidi:** Rispetto conformità svizzera nLPD, interfaccia pulita e professionale B2B, nessuna dipendenza da PDF esterni per il catalogo principale.
+- **Infrastruttura cliente (aggiornato 16/10/2026):** hosting e dominio `t-workgadget.ch` già su Hostpoint; manca solo il passaggio del contratto all'account di Emanuele (nuova email), da chiudere prima dello switch DNS. Fino ad allora niente produzione: lavoro in staging. L'account Google personale di Emanuele è rimasto sospeso dal 18/09 al 15/10/2026: account amministratore, notifiche preventivi e accessi del nuovo sito vanno legati a una casella sul dominio aziendale, non a un account personale.
 - **Out-of-Scope (Fase 1):** E-commerce transazionale con gateway di pagamento con carta di credito immediato (il modello di business è quotazione preventivo su misura B2B in base a quantitativi e tecnica di personalizzazione).
 
 ---
@@ -22,3 +23,4 @@
 - **ADR-002 (21/09/2026): Stack Tecnologico — WordPress + WooCommerce B2B via REST API & Application Passwords.**
   - *Decisione:* Utilizzare WordPress + WooCommerce configurato in modalità B2B Catalog & Quote, gestito programmaticamente dall'agente AI tramite Application Passwords e WooCommerce REST API (`/wp-json/wc/v3/`).
   - *Motivazione:* Allineamento con il workflow già collaudato con successo dall'utente. Permette l'automazione totale del caricamento articoli, categorie, attributi e varianti via script REST API, offrendo al contempo ad Emanuele Frigerio un pannello di gestione ordini/lead standard e familiare.
+  - *Conseguenze:* L'audit (§4.1), la proposta commerciale e la presentazione sono allineati su questo stack; le alternative valutate in bozza (Next.js / Astro, WordPress headless) sono scartate. Il "nessun vincolo" promesso al cliente significa piattaforma open source e dati esportabili, non assenza di costi: restano canone di hosting ed eventuali licenze plugin.

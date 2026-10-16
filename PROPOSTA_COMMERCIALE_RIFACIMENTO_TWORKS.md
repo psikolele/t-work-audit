@@ -52,9 +52,12 @@ Il nuovo sito non sarà una semplice vetrina statica, ma un **generatore di prev
 
 ## 3. Moduli e Caratteristiche del Nuovo Progetto
 
+### Piattaforma
+Il nuovo portale sarà realizzato su **WordPress + WooCommerce** configurato come catalogo B2B con richiesta di preventivo (senza pagamento online in questa fase). Emanuele gestirà prodotti, richieste e testi da un pannello standard; il caricamento del catalogo sarà automatizzato da Kraken tramite le API di WooCommerce.
+
 ### Modulo A — UI/UX e Visual Design Industriale Moderno
 - Design grafico su misura, pulito e autorevole, ottimizzato per responsabili acquisti, PMI e studi professionali.
-- Pieno rispetto della tipografia web e usabilità mobile (Core Web Vitals con caricamento sotto 1 secondo).
+- Pieno rispetto della tipografia web e usabilità mobile (obiettivo Core Web Vitals "buoni" e 90+ su PageSpeed mobile).
 - Sezione "Lavorazioni e Personalizzazione" (Ricamo, Serigrafia, Stampa DTF, Incisione laser) per valorizzare il know-how aziendale.
 
 ### Modulo B — Catalogo Digitale B2B Interattivo
@@ -89,10 +92,14 @@ Il nuovo sito non sarà una semplice vetrina statica, ma un **generatore di prev
 | **Fase 3: SEO, Compliance & Integrazioni** | Setup Schema.org, collaudo form, tracciamento conversioni e conformità nLPD. | 1 settimana |
 | **Fase 4: Collaudo & Messa Online** | Switch del dominio `t-workgadget.ch`, migrazione DNS e collaudo finale. | 3-5 giorni |
 
+**Prerequisiti lato T-Work per la messa online:**
+- Completare il passaggio del contratto Hostpoint (hosting e dominio `t-workgadget.ch`, già in uso) all'account di Emanuele Frigerio, così da poter gestire DNS e hosting. Nessun cambio di provider.
+- Indicare una casella email sul dominio aziendale (es. `info@t-workgadget.ch`) per l'account amministratore e le notifiche dei preventivi, invece di un account personale.
+
 ---
 
 ## 5. Perché Scegliere Kraken
 
-- **Nessun vincolo a piattaforme chiuse:** addio a costosi canoni Webflow per ospitare pagine statiche.
-- **Piena proprietà del codice e dei dati:** la piattaforma appartiene al 100% a T-Work & Gadget Sagl.
+- **Piattaforma open source, nessun vincolo a Webflow:** WordPress + WooCommerce è lo standard più diffuso al mondo; resta solo il canone dell'hosting svizzero già in uso (Hostpoint) ed eventuali licenze di plugin, senza abbonamenti a piattaforme chiuse.
+- **Piena proprietà dei contenuti e dei dati:** sito, catalogo e richieste appartengono al 100% a T-Work & Gadget Sagl e sono esportabili in qualsiasi momento.
 - **Supporto locale e tempestività:** un team che comprende il mercato ticinese e svizzero e risponde rapidamente.
