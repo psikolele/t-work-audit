@@ -1,7 +1,6 @@
 # Proposta Commerciale & Strategica: Rifacimento Nuovo Portale T-Works
 
-**Destinatario:** [Ragione sociale Xgraph, sede da confermare]  
-**Per conto di:** T-Work & Gadget Sagl  
+**Destinatario:** Xgraph  
 **Data:** Ottobre 2026  
 **Riferimento offerta:** KRK-TW-2026-01 · **Validità:** 30 giorni dalla data di invio  
 **Società Proponente:** Kraken Web Development  
@@ -11,7 +10,7 @@
 
 ## 1. Perché il sito attuale sta frenando la crescita di T-Works
 
-L'attuale sito web (`t-workgadget.ch`) non riflette la qualità dei prodotti e la professionalità che T-Work & Gadget offre ai propri clienti sul territorio ticinese. 
+L'attuale sito web (`t-workgadget.ch`) non riflette la qualità dei prodotti e la professionalità che l'azienda offre ai propri clienti sul territorio ticinese. 
 
 Dall'audit tecnico e strategico condotto emergono tre problemi strutturali che oggi causano la **perdita quotidiana di potenziali clienti aziendali**:
 
@@ -88,12 +87,12 @@ La tempistica parte dal **completamento dei prerequisiti (Fase 0)**, non dalla f
 
 | Fase | Descrizione | Durata |
 |---|---|---|
-| **Fase 0: Prerequisiti & Accessi** | Completamento del trasferimento del contratto Hostpoint a T-Work & Gadget Sagl, accesso alla gestione DNS di `t-workgadget.ch`, recupero dei cataloghi dei marchi scelti (file dei fornitori o PDF) dall'account Google. | 1 settimana *(dipende dai tempi di Hostpoint e Google)* |
-| **Fase 1: Architettura & Visual Concept** | Albero di navigazione, categorie, wireframe e grafica. Include due giri di revisione e l'approvazione scritta di Emanuele. | 1–2 settimane |
+| **Fase 0: Prerequisiti & Accessi** | Completamento del trasferimento del contratto Hostpoint a nome del cliente, accesso alla gestione DNS di `t-workgadget.ch`, recupero dei cataloghi dei marchi scelti (file dei fornitori o PDF) dall'account Google. | 1 settimana *(dipende dai tempi di Hostpoint e Google)* |
+| **Fase 1: Architettura & Visual Concept** | Albero di navigazione, categorie, wireframe e grafica. Include due giri di revisione e l'approvazione scritta del cliente. | 1–2 settimane |
 | **Fase 2: Setup Piattaforma & Frontend** | Installazione WordPress + WooCommerce (modalità catalogo B2B) su Hostpoint, sviluppo interfaccia responsive, configuratore preventivi con upload logo. | 2 settimane |
 | **Fase 3: Migrazione dei Cataloghi** | Caricamento di articoli, foto, varianti e taglie per gli 8–10 marchi scelti. Makito e midocean dal feed dati del fornitore; gli altri dai file ricevuti o, in mancanza, dai PDF. Parte in parallelo alla Fase 2. | 3–4 settimane |
 | **Fase 4: SEO, Compliance & Integrazioni** | Schema.org `LocalBusiness`, SEO territoriale, tracciamento conversioni, informativa e cookie conformi nLPD, notifiche preventivi. | 1 settimana |
-| **Fase 5: Collaudo & Messa Online** | Collaudo con Emanuele, switch DNS su Hostpoint, redirect dalle vecchie URL, verifica indicizzazione. | 1 settimana |
+| **Fase 5: Collaudo & Messa Online** | Collaudo con il cliente, switch DNS su Hostpoint, redirect dalle vecchie URL, verifica indicizzazione. | 1 settimana |
 
 **Durata complessiva realistica: 6–8 settimane** dal completamento della Fase 0.
 - **Go-live** con tutti i marchi che hanno file disponibili: circa **settimana 7**.
@@ -106,7 +105,7 @@ La tempistica parte dal **completamento dei prerequisiti (Fase 0)**, non dalla f
 ## 5. Perché Scegliere Kraken
 
 - **Nessun vincolo a piattaforme chiuse:** addio a costosi canoni Webflow per ospitare pagine statiche.
-- **Piena proprietà del codice e dei dati:** la piattaforma appartiene al 100% a T-Work & Gadget Sagl.
+- **Piena proprietà del codice e dei dati:** la piattaforma appartiene al 100% al cliente.
 - **Supporto locale e tempestività:** un team che comprende il mercato ticinese e svizzero e risponde rapidamente.
 
 
@@ -114,15 +113,15 @@ La tempistica parte dal **completamento dei prerequisiti (Fase 0)**, non dalla f
 
 ## 6. Investimento
 
-*Importi in CHF, IVA [da definire]. Prezzo fisso per il perimetro descritto qui sotto.*
+*Importi in CHF, IVA esclusa. Prezzo fisso per il perimetro descritto qui sotto.*
 
-**Pacchetto unico, sito e catalogo T-Work: CHF 1'700** una tantum.
+**Pacchetto unico, sito e catalogo: CHF 1'600 più IVA** una tantum.
 
 **Incluso:**
 - Design su misura e sito responsive (Modulo A)
 - Setup WordPress + WooCommerce in modalità catalogo B2B e preventivo, su Hostpoint
-- Catalogo interattivo con **8–10 marchi**, scelti da Emanuele. Makito e midocean sono i primi candidati perché hanno un feed dati
-- Circa **15–20 modelli per marchio** (proposta, totale 120–200 articoli), da confermare con Emanuele
+- Catalogo interattivo con **8–10 marchi**, scelti dal cliente. Makito e midocean sono i primi candidati perché hanno un feed dati
+- Circa **15–20 modelli per marchio**, per un totale di 120–200 articoli
 - Richiesta preventivo con upload logo e lista multi-articolo (Modulo C, versione base)
 - SEO tecnica, Schema.org `LocalBusiness`, conformità nLPD (Modulo D, versione base)
 - Redirect dalle vecchie URL
@@ -134,8 +133,8 @@ La tempistica parte dal **completamento dei prerequisiti (Fase 0)**, non dalla f
 - Cataloghi PDF scansionati o non leggibili: inseriti a ore, solo previo accordo.
 - Foto di prodotto non fornite da T-Work o dal fornitore.
 - Modifiche oltre il perimetro: preventivate prima di essere eseguite.
-- Hosting e dominio su Hostpoint: costi a carico di T-Work [da confermare].
-- Ore extra: CHF [70]/ora.
+- Hosting e dominio su Hostpoint: costi a carico del cliente.
+- Ore extra: CHF 70/ora.
 
 **Pagamento:** 40% alla firma · 30% all'approvazione del visual concept · 30% alla messa online.
 
@@ -152,7 +151,7 @@ La tempistica parte dal **completamento dei prerequisiti (Fase 0)**, non dalla f
 - Monitoraggio di sicurezza e disponibilità
 - Assistenza via email, con risposta entro 2 giorni lavorativi
 
-**Non incluso, a ore:** nuovi articoli o marchi, modifiche di contenuto e grafica.
+**Non incluso, a ore (CHF 70/ora):** nuovi articoli o marchi, modifiche di contenuto e grafica.
 
 - Il canone si rinnova tacitamente ogni anno, con disdetta scritta tre mesi prima della scadenza.
 - I primi 30 giorni dopo il go-live sono in garanzia: i difetti di funzionamento vengono corretti senza costi.
@@ -161,25 +160,25 @@ La tempistica parte dal **completamento dei prerequisiti (Fase 0)**, non dalla f
 
 ## 8. Condizioni Generali
 
-- **Proprietà:** al saldo, codice, contenuti, dominio e accessi amministratore appartengono interamente a [Xgraph o T-Work: da confermare].
+- **Proprietà:** al saldo, codice, contenuti, dominio e accessi amministratore appartengono interamente al cliente.
 - **Contenuti:** testi, loghi e cataloghi sono forniti da T-Work, che ne garantisce i diritti d'uso. Servizi fotografici e copywriting non sono inclusi salvo accordo separato.
 - **Modifiche di perimetro:** richieste oltre quanto descritto in questa proposta vengono preventivate prima di essere eseguite.
 - **Revisioni:** inclusi due giri di revisione sulla grafica e uno sul sito completo prima del go-live.
 - **Validità:** questa offerta è valida 30 giorni dalla data di invio.
-- **Diritto applicabile e foro:** [diritto svizzero, foro di _____].
+- **Diritto applicabile e foro:** diritto svizzero; foro competente quello della sede di Kraken Web Development.
 
 ---
 
 ## 9. Accettazione
 
-Con la firma, [Ragione sociale Xgraph] conferma l'incarico a Kraken Web Development alle condizioni sopra descritte.
+Con la firma, Xgraph conferma l'incarico a Kraken Web Development alle condizioni sopra descritte.
 
 **Marchi scelti (8–10):** ______________________________________
 
-| Per [Ragione sociale Xgraph] | Per Kraken Web Development |
+| Per Xgraph | Per Kraken Web Development |
 |---|---|
-| Nome: [da confermare] | Nome: _______________________ |
-| Ruolo: [da confermare] | Ruolo: _______________________ |
+| Nome: _______________________ | Nome: _______________________ |
+| Ruolo: _______________________ | Ruolo: _______________________ |
 | Luogo e data: _______________ | Luogo e data: _______________ |
 | Firma: | Firma: |
 | <br><br>_______________________ | <br><br>_______________________ |
