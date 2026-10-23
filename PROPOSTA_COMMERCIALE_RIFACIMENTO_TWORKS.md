@@ -1,6 +1,6 @@
 # Proposta Commerciale & Strategica: Rifacimento Nuovo Portale T-Works
 
-**Destinatario:** Xgraph  
+**Destinatario:** XGRAPH Sagl, Via Dante Alighieri 19, 6830 Chiasso (Svizzera), IDI CHE-282.347.037  
 **Data:** Ottobre 2026  
 **Riferimento offerta:** KRK-TW-2026-01 · **Validità:** 30 giorni dalla data di invio  
 **Società Proponente:** Kraken Web Development  
@@ -171,11 +171,11 @@ La tempistica parte dal **completamento dei prerequisiti (Fase 0)**, non dalla f
 
 ## 9. Accettazione
 
-Con la firma, Xgraph conferma l'incarico a Kraken Web Development alle condizioni sopra descritte.
+Con la firma, XGRAPH Sagl conferma l'incarico a Kraken Web Development alle condizioni sopra descritte.
 
 **Marchi scelti (8–10):** ______________________________________
 
-| Per Xgraph | Per Kraken Web Development |
+| Per XGRAPH Sagl | Per Kraken Web Development |
 |---|---|
 | Nome: _______________________ | Nome: _______________________ |
 | Ruolo: _______________________ | Ruolo: _______________________ |
