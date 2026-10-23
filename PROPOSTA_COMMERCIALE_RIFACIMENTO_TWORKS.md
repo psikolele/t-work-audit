@@ -1,7 +1,8 @@
 # Proposta Commerciale & Strategica: Rifacimento Nuovo Portale T-Works
 
-**Destinatario:** Emanuele Frigerio — Fondatore & Titolare, T-Work & Gadget Sagl  
-**Data:** Settembre 2026  
+**Destinatario:** XGRAPH Sagl, Via Dante Alighieri 19, 6830 Chiasso (Svizzera), IDI CHE-282.347.037  
+**Data:** Ottobre 2026  
+**Riferimento offerta:** KRK-TW-2026-01 · **Validità:** 30 giorni dalla data di invio  
 **Società Proponente:** Kraken Web Development  
 **Oggetto:** Riprogettazione integrale della presenza digitale, catalogo interattivo B2B e preventivatore automatizzato per il Canton Ticino e la Svizzera.
 
@@ -9,7 +10,7 @@
 
 ## 1. Perché il sito attuale sta frenando la crescita di T-Works
 
-L'attuale sito web (`t-workgadget.ch`) non riflette la qualità dei prodotti e la professionalità che T-Work & Gadget offre ai propri clienti sul territorio ticinese. 
+L'attuale sito web (`t-workgadget.ch`) non riflette la qualità dei prodotti e la professionalità che l'azienda offre ai propri clienti sul territorio ticinese. 
 
 Dall'audit tecnico e strategico condotto emergono tre problemi strutturali che oggi causano la **perdita quotidiana di potenziali clienti aziendali**:
 
@@ -44,7 +45,7 @@ Il nuovo sito non sarà una semplice vetrina statica, ma un **generatore di prev
        ├─► Carica direttamente il Logo Aziendale (Vettoriale / PDF)
        │
        ▼
-[Ricezione Preventivo Strutturato su Misura per Emanuele]
+[Ricezione Preventivo Strutturato su Misura per il Cliente]
   ↳ Con notifica immediata via Email & WhatsApp per chiusura commerciale rapida!
 ```
 
@@ -82,17 +83,102 @@ Il nuovo sito non sarà una semplice vetrina statica, ma un **generatore di prev
 
 ## 4. Fasi di Realizzazione e Tempistiche
 
+La tempistica parte dal **completamento dei prerequisiti (Fase 0)**, non dalla firma: senza accesso a hosting, dominio e cataloghi originali il lavoro non può andare online.
+
 | Fase | Descrizione | Durata |
 |---|---|---|
-| **Fase 1: Architettura & Visual Concept** | Definizione albero di navigazione, categorie e wireframe grafico approvato da Emanuele. | 1 settimana |
-| **Fase 2: Sviluppo Frontend & Catalogo** | Implementazione interfaccia responsive, caricamento prodotti di punta e configuratore preventivi. | 2 settimane |
-| **Fase 3: SEO, Compliance & Integrazioni** | Setup Schema.org, collaudo form, tracciamento conversioni e conformità nLPD. | 1 settimana |
-| **Fase 4: Collaudo & Messa Online** | Switch del dominio `t-workgadget.ch`, migrazione DNS e collaudo finale. | 3-5 giorni |
+| **Fase 0: Prerequisiti & Accessi** | Completamento del trasferimento del contratto Hostpoint a nome del cliente, accesso alla gestione DNS di `t-workgadget.ch`, recupero dei cataloghi dei marchi scelti (file dei fornitori o PDF) dall'account Google. | 1 settimana *(dipende dai tempi di Hostpoint e Google)* |
+| **Fase 1: Architettura & Visual Concept** | Albero di navigazione, categorie, wireframe e grafica. Include due giri di revisione e l'approvazione scritta del cliente. | 1–2 settimane |
+| **Fase 2: Setup Piattaforma & Frontend** | Installazione WordPress + WooCommerce (modalità catalogo B2B) su Hostpoint, sviluppo interfaccia responsive, configuratore preventivi con upload logo. | 2 settimane |
+| **Fase 3: Migrazione dei Cataloghi** | Caricamento di articoli, foto, varianti e taglie per gli 8–10 marchi scelti. Makito e midocean dal feed dati del fornitore; gli altri dai file ricevuti o, in mancanza, dai PDF. Parte in parallelo alla Fase 2. | 3–4 settimane |
+| **Fase 4: SEO, Compliance & Integrazioni** | Schema.org `LocalBusiness`, SEO territoriale, tracciamento conversioni, informativa e cookie conformi nLPD, notifiche preventivi. | 1 settimana |
+| **Fase 5: Collaudo & Messa Online** | Collaudo con il cliente, switch DNS su Hostpoint, redirect dalle vecchie URL, verifica indicizzazione. | 1 settimana |
 
----
+**Durata complessiva realistica: 6–8 settimane** dal completamento della Fase 0.
+- **Go-live** con tutti i marchi che hanno file disponibili: circa **settimana 7**.
+- I marchi senza file dal fornitore slittano a un lotto successivo, prezzato a parte (vedi sezione 6).
+
+> **Perché la migrazione dei cataloghi non può aspettare:** oggi tutti i cataloghi dipendono da un singolo account Google. Se l'account viene sospeso o chiuso, i link dei cataloghi nel sito smettono di funzionare dall'oggi al domani. Spostarli sul dominio T-Work elimina questo rischio.
+
+**Cosa serve da T-Work per rispettare i tempi:** accessi Hostpoint e DNS, file originali dei cataloghi, logo in formato vettoriale, testi aziendali, feedback sulle bozze entro 5 giorni lavorativi. Ritardi su questi punti spostano la consegna dello stesso numero di giorni.
 
 ## 5. Perché Scegliere Kraken
 
 - **Nessun vincolo a piattaforme chiuse:** addio a costosi canoni Webflow per ospitare pagine statiche.
-- **Piena proprietà del codice e dei dati:** la piattaforma appartiene al 100% a T-Work & Gadget Sagl.
+- **Piena proprietà del codice e dei dati:** la piattaforma appartiene al 100% al cliente.
 - **Supporto locale e tempestività:** un team che comprende il mercato ticinese e svizzero e risponde rapidamente.
+
+
+---
+
+## 6. Investimento
+
+*Importi in CHF, IVA esclusa. Prezzo fisso per il perimetro descritto qui sotto.*
+
+**Pacchetto unico, sito e catalogo: CHF 1'600 più IVA** una tantum.
+
+**Incluso:**
+- Design su misura e sito responsive (Modulo A)
+- Setup WordPress + WooCommerce in modalità catalogo B2B e preventivo, su Hostpoint
+- Catalogo interattivo con **8–10 marchi**, scelti dal cliente. Makito e midocean sono i primi candidati perché hanno un feed dati
+- Circa **15–20 modelli per marchio**, per un totale di 120–200 articoli
+- Richiesta preventivo con upload logo e lista multi-articolo (Modulo C, versione base)
+- SEO tecnica, Schema.org `LocalBusiness`, conformità nLPD (Modulo D, versione base)
+- Redirect dalle vecchie URL
+- Un'ora di formazione sul pannello
+- Primo anno di manutenzione (sezione 7)
+
+**Esclusioni, non incluse nel prezzo:**
+- Marchi senza file o feed dal fornitore: slittano a un lotto successivo, prezzato a parte. Se un fornitore rilascia solo file PDF e non un feed, i costi possono variare: l'inserimento manuale viene quantificato a ore e concordato prima di procedere.
+- Cataloghi PDF scansionati o non leggibili: inseriti a ore, solo previo accordo.
+- Foto di prodotto non fornite da T-Work o dal fornitore.
+- Modifiche oltre il perimetro: preventivate prima di essere eseguite.
+- Hosting e dominio su Hostpoint: costi a carico del cliente.
+- Ore extra: CHF 70/ora.
+
+**Pagamento:** 40% alla firma · 30% all'approvazione del visual concept · 30% alla messa online.
+
+---
+
+## 7. Manutenzione e Assistenza
+
+- **Primo anno:** incluso nel prezzo.
+- **Dal secondo anno:** CHF 300 all'anno, fatturati in anticipo.
+
+**Incluso nel canone annuale:**
+- Aggiornamenti WordPress, WooCommerce e plugin
+- Backup automatici
+- Monitoraggio di sicurezza e disponibilità
+- Assistenza via email, con risposta entro 2 giorni lavorativi
+
+**Non incluso, a ore (CHF 70/ora):** nuovi articoli o marchi, modifiche di contenuto e grafica.
+
+- Il canone si rinnova tacitamente ogni anno, con disdetta scritta tre mesi prima della scadenza.
+- I primi 30 giorni dopo il go-live sono in garanzia: i difetti di funzionamento vengono corretti senza costi.
+
+---
+
+## 8. Condizioni Generali
+
+- **Proprietà:** al saldo, codice, contenuti, dominio e accessi amministratore appartengono interamente al cliente.
+- **Contenuti:** testi, loghi e cataloghi sono forniti da T-Work, che ne garantisce i diritti d'uso. Servizi fotografici e copywriting non sono inclusi salvo accordo separato.
+- **Modifiche di perimetro:** richieste oltre quanto descritto in questa proposta vengono preventivate prima di essere eseguite.
+- **Revisioni:** inclusi due giri di revisione sulla grafica e uno sul sito completo prima del go-live.
+- **Validità:** questa offerta è valida 30 giorni dalla data di invio.
+- **Diritto applicabile e foro:** diritto svizzero; foro competente quello della sede di Kraken Web Development.
+
+---
+
+## 9. Accettazione
+
+Con la firma, XGRAPH Sagl conferma l'incarico a Kraken Web Development alle condizioni sopra descritte.
+
+**Marchi scelti (8–10):** ______________________________________
+
+| Per XGRAPH Sagl | Per Kraken Web Development |
+|---|---|
+| Nome: _______________________ | Nome: _______________________ |
+| Ruolo: _______________________ | Ruolo: _______________________ |
+| Luogo e data: _______________ | Luogo e data: _______________ |
+| Firma: | Firma: |
+| <br><br>_______________________ | <br><br>_______________________ |
