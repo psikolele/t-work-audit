@@ -1,6 +1,7 @@
 # Proposta Commerciale & Strategica: Rifacimento Nuovo Portale T-Works
 
-**Destinatario:** Emanuele Frigerio — Fondatore & Titolare, T-Work & Gadget Sagl  
+**Destinatario:** [Ragione sociale Xgraph, sede da confermare]  
+**Per conto di:** T-Work & Gadget Sagl  
 **Data:** Ottobre 2026  
 **Riferimento offerta:** KRK-TW-2026-01 · **Validità:** 30 giorni dalla data di invio  
 **Società Proponente:** Kraken Web Development  
@@ -45,7 +46,7 @@ Il nuovo sito non sarà una semplice vetrina statica, ma un **generatore di prev
        ├─► Carica direttamente il Logo Aziendale (Vettoriale / PDF)
        │
        ▼
-[Ricezione Preventivo Strutturato su Misura per Emanuele]
+[Ricezione Preventivo Strutturato su Misura per il Cliente]
   ↳ Con notifica immediata via Email & WhatsApp per chiusura commerciale rapida!
 ```
 
@@ -160,7 +161,7 @@ La tempistica parte dal **completamento dei prerequisiti (Fase 0)**, non dalla f
 
 ## 8. Condizioni Generali
 
-- **Proprietà:** al saldo, codice, contenuti, dominio e accessi amministratore appartengono interamente a T-Work & Gadget Sagl.
+- **Proprietà:** al saldo, codice, contenuti, dominio e accessi amministratore appartengono interamente a [Xgraph o T-Work: da confermare].
 - **Contenuti:** testi, loghi e cataloghi sono forniti da T-Work, che ne garantisce i diritti d'uso. Servizi fotografici e copywriting non sono inclusi salvo accordo separato.
 - **Modifiche di perimetro:** richieste oltre quanto descritto in questa proposta vengono preventivate prima di essere eseguite.
 - **Revisioni:** inclusi due giri di revisione sulla grafica e uno sul sito completo prima del go-live.
@@ -171,14 +172,14 @@ La tempistica parte dal **completamento dei prerequisiti (Fase 0)**, non dalla f
 
 ## 9. Accettazione
 
-Con la firma, T-Work & Gadget Sagl conferma l'incarico a Kraken Web Development alle condizioni sopra descritte.
+Con la firma, [Ragione sociale Xgraph] conferma l'incarico a Kraken Web Development alle condizioni sopra descritte.
 
 **Marchi scelti (8–10):** ______________________________________
 
-| Per T-Work & Gadget Sagl | Per Kraken Web Development |
+| Per [Ragione sociale Xgraph] | Per Kraken Web Development |
 |---|---|
-| Nome: Emanuele Frigerio | Nome: _______________________ |
-| Ruolo: Titolare | Ruolo: _______________________ |
+| Nome: [da confermare] | Nome: _______________________ |
+| Ruolo: [da confermare] | Ruolo: _______________________ |
 | Luogo e data: _______________ | Luogo e data: _______________ |
 | Firma: | Firma: |
 | <br><br>_______________________ | <br><br>_______________________ |
