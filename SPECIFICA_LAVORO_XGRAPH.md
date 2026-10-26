@@ -1,7 +1,7 @@
 # Specifica di lavoro e vincoli: nuovo portale T-Works
 
-**Committente:** XGRAPH Sagl, Viale Breggia 11 A, 6834 Morbio Inferiore (Ticino, Svizzera)
-**Preparato da:** Kraken Web Development
+**Committente:** XGRAPH Sagl, Viale Breggia 11 A, 6834 Morbio Inferiore (Ticino, Svizzera)  
+**Preparato da:** Kraken Web Development  
 **Data:** Ottobre 2026
 
 ---
@@ -13,6 +13,7 @@ Il sito attuale (`t-workgadget.ch`) è una vetrina statica costruita su un templ
 ## 2. Obiettivo e perimetro
 
 Il nuovo sito include:
+
 - un catalogo interattivo B2B con **8–10 marchi**, con circa **15–20 modelli per marchio** (120–200 articoli in totale);
 - una richiesta di preventivo con lista multi-articolo e upload del logo aziendale;
 - un design responsive, pensato per uso da smartphone;
@@ -23,22 +24,26 @@ La scelta dei marchi spetta al committente. Makito e midocean sono i primi candi
 ## 3. Moduli di lavoro
 
 **Modulo A: Design e sito**
+
 - Grafica su misura, pulita e professionale, per responsabili acquisti e PMI.
 - Caricamento rapido e uso mobile.
 - Sezione "Lavorazioni e personalizzazione" (ricamo, serigrafia, stampa DTF, incisione laser).
 
 **Modulo B: Catalogo B2B**
+
 - Categorie per ambito d'uso: lavoro e DPI, promozionale e corporate, Horeca e medicale, gadget e merchandising.
 - Scheda prodotto con foto, taglie e colori.
 - Ricerca per parola chiave e filtro per marchio.
 
 **Modulo C: Richiesta preventivo**
+
 - Lista di più articoli con quantità indicative.
 - Upload del logo (`.ai`, `.eps`, `.svg`, `.pdf`, `.png`).
 - Scelta della tecnica di personalizzazione, o richiesta di consiglio.
 - Recapiti e note.
 
 **Modulo D: SEO territoriale e conformità**
+
 - Schema.org `LocalBusiness` per Chiasso, Lugano e Ticino.
 - Ottimizzazione per ricerche locali di abbigliamento da lavoro e gadget personalizzati.
 - Informativa privacy e cookie conformi alla nLPD.
